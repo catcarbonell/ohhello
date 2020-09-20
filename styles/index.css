@@ -50,8 +50,10 @@ pre, code {
     font-family: 'Space Mono', monospace;
 }
 
-#main-nav {
+#menu {
     font-family: 'Nixie One', cursive;
-    font-weight: 900;
+    height: 100vh;
+    
 }
+
 @tailwind utilities;
