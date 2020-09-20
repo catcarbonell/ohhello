@@ -2,6 +2,8 @@ import {useState, useEffect, useRef} from 'react'
 import { TweenMax } from "gsap"
 import Link from 'next/link'
 import NavItem from './layout/NavItem'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faEllipsisH } from '@fortawesome/free-solid-svg-icons'
 
 const Nav = () => {
     const [state, setState] = useState(true);
@@ -32,9 +34,11 @@ const Nav = () => {
                 </Link> 
             </div>
 
-            <div className="flex items-center justify-end w-1/6 md:w-1/2">
-                <div id="menu-btn" className="fixed z-30 p-2 mr-4 md:mr-6">
-                    <h3 onClick={toggleMenu} className="cursor-pointer hover:bg-custom-shadow font-bold">Menu</h3>
+            <div className="flex items-center mt-2 justify-end w-1/6 md:w-1/2">
+                <div id="menu-btn" className="fixed z-30 bg-custom-shadow hover:bg-custom-lavender active:bg-custom-lavender hover:text-custom-shadow active:text-custom-shadow rounded-full p-2 mr-4 md:mr-6">
+                    <div onClick={toggleMenu} className="cursor-pointer font-bold">
+                        <FontAwesomeIcon icon={faEllipsisH} />
+                    </div>
                 </div>
                
                 <nav id="menu" ref={moveMenu} className="fixed z-20 inset-y-0 right-0 bg-custom-shadow bg-opacity-75 shadow-md md:text-left text-center md:w-1/6 w-full z-30 flex flex-col place-self-end font-bold justify-center">         
