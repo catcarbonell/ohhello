@@ -1,0 +1,57 @@
+/* purgecss start ignore */
+@tailwind base;
+@tailwind components;
+/* purgecss end ignore */
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Nixie+One&family=Nunito:wght@300;400;900&family=Space+Mono:wght@400;700&display=swap');
+
+body {
+    background-color: #807F89;
+    color: #feefe9;
+    font-size: 13px;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+h1 {
+    color: #E0D9E2;
+    font-size:1.5rem;
+    font-family: 'Nixie One', cursive;
+    margin: 2rem  0 0 0;
+}
+
+h2 {
+    color: #D7DBD1;
+    font-size: 1.5rem;
+    font-weight: 900;
+    font-family: 'Courier Prime', monospace;
+}
+h3 {
+    font-size: 13px;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Nunito', sans-serif;
+}
+
+a:link, a:visited {
+    color: #F9D5D3;
+}
+a:hover {
+    color:#BDC9DD;
+}
+
+pre, code {
+    color: #fff9f5;
+    background-color: #9dA9b6;
+    padding: 4px;
+    margin: 7px auto;
+    border-radius: 5px;
+    box-shadow: 3px 3px 2px #665D69;
+    font-family: 'Space Mono', monospace;
+}
+
+#main-nav {
+    font-family: 'Nixie One', cursive;
+    font-weight: 900;
+}
+@tailwind utilities;
