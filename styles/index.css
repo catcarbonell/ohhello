@@ -15,8 +15,7 @@ body {
 h1 {
     color: #E0D9E2;
     font-size:1.5rem;
-    font-family: 'Nixie One', cursive;
-    margin: 2rem  0 0 0;
+    font-family: 'Space Mono', monospace;
 }
 
 h2 {
@@ -27,7 +26,6 @@ h2 {
 }
 h3 {
     font-size: 13px;
-    font-weight: 900;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-family: 'Nunito', sans-serif;
@@ -51,9 +49,7 @@ pre, code {
 }
 
 #menu {
-    font-family: 'Nixie One', cursive;
-    height: 100vh;
-    
+    height: 100vh;   
 }
 
 @tailwind utilities;
