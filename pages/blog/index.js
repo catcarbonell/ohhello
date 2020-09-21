@@ -1,4 +1,4 @@
-import { useRouter } from 'next/router'
+
 import Head from 'next/head'
 import Link from 'next/link';
 import DateComponent from '../../components/layout/DateComponent'
@@ -7,8 +7,7 @@ import { getPosts } from '../api/posts';
 
 
 const Blog = (props) => {
-    const router = useRouter()
-    const { slug } = router.query
+   
 
     return(
       <>
@@ -21,7 +20,7 @@ const Blog = (props) => {
           {props.posts.map(post => (
            
             <div key={post.id} className="w-full md:w-1/4 h-auto bg-custom-peach text-custom-shadow bg-opacity-75  mx-4 my-6 rounded-lg shadow-lg">
-               <Link href={`/[slug]`} as={`/${post.slug}`}><a>
+               <Link href={`/blog/[slug]`} as={`/blog/${post.slug}`}><a>
               <div>
                   <img src={post.feature_image} className="object-cover rounded-t-lg w-full h-32" alt={post.title} />
               </div>

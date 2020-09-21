@@ -26,7 +26,7 @@ const Nav = () => {
     return(
         <div className="w-screen flex flex-row md:px-4 md:py-2">
             <div className="flex flex-col justify-start w-5/6 md:ml-6 md:w-1/2 pl-4 pt-2 md:p-0">
-               <Link href="/">
+               <Link href="/Home" as="/">
                     <a>
                         <h1 className="lowercase">@catcarbn</h1>
                         <h3> UX/UI Engineer &amp;&amp; Illustrator </h3>
@@ -44,7 +44,7 @@ const Nav = () => {
                 <nav id="menu" ref={moveMenu} className="fixed z-20 inset-y-0 right-0 bg-custom-shadow bg-opacity-75 shadow-md md:text-left text-center md:w-1/6 w-full z-30 flex flex-col place-self-end font-bold justify-center">         
                     <div onClick={toggleMenu}><NavItem text="Close Menu &rarr;" /></div>
                     <div className="mr-2">
-                        <Link href="/"><a onClick={toggleMenu}><NavItem text="Home" /></a></Link>
+                        <Link href="/Home" as="/"><a onClick={toggleMenu}><NavItem text="Home" /></a></Link>
                         <Link href="/blog"><a onClick={toggleMenu}><NavItem text="Blog" /></a></Link>
                         <Link href="/portfolio"><a onClick={toggleMenu}><NavItem text="Portfolio" /></a></Link>
                         <Link href="/store"><a onClick={toggleMenu}><NavItem text="Store" /></a></Link>

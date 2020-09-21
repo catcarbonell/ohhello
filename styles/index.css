@@ -47,19 +47,36 @@ a:link, a:visited {
 a:hover {
     color:#BDC9DD;
 }
-
-pre, code {
+pre {
+    background-color:  #665D69;
+}
+code {
     color: #fff9f5;
-    background-color: #9dA9b6;
     padding: 4px;
     margin: 7px auto;
-    border-radius: 5px;
-    box-shadow: 3px 3px 2px #665D69;
     font-family: 'Space Mono', monospace;
 }
 
 #menu {
     height: 100vh;   
+}
+.post-style p{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+.post-style h2{
+    margin-bottom: 1.5rem;
+}
+.post-style h3{
+    font-size: 1.3rem;
+    font-weight: 900;
+}
+.post-style blockquote{
+    display: block;
+    margin-left: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 1.5rem;
+    border-left: solid 5px #665D69;
 }
 
 @tailwind utilities;
