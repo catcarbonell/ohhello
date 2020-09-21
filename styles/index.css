@@ -31,6 +31,16 @@ h3 {
     font-family: 'Nunito', sans-serif;
 }
 
+h4 {
+    font-size: 13px;
+    font-family: 'Space Mono', monospace;    
+}
+
+h5 {
+    font-size: 13px;
+    font-family: 'Space Mono', monospace;    
+}
+
 a:link, a:visited {
     color: #F9D5D3;
 }
