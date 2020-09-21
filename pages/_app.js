@@ -1,5 +1,5 @@
 import '../styles/index.css'
-import "prismjs/themes/prism-synthwave84.css";
+import "prismjs/themes/prism-bruha.css";
 import Nav from '../components/nav'
 import Footer from '../components/footer'
 

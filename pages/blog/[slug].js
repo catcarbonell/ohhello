@@ -20,7 +20,7 @@ const PostPage = (props) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className="ml-10 mb-4">
-            <Link href="/blog"><a className="hover:text-custom-airplant hover:bg-custom-blk">&larr; Back to Blog Archive</a></Link>            
+            <Link href="/blog"><a className="uppercase hover:text-custom-airplant hover:bg-custom-blk">&larr; Back to Blog Archive</a></Link>            
             </div>
             <div className="w-screen h-auto opacity-75 mx-auto">
                 <img className="object-cover w-screen m-0 p-0" src={props.post.feature_image} alt={props.post.title} />
@@ -36,7 +36,8 @@ const PostPage = (props) => {
                
                 
                 <div dangerouslySetInnerHTML={{ __html: props.post.html }} />
-            </div>
+                </div>
+                <Link href="/blog"><a className="uppercase text-center mb-20 hover:text-custom-airplant hover:bg-custom-blk">&larr; Back to Blog Archive</a></Link>   
         </>
     )
 }

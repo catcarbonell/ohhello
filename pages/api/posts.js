@@ -2,7 +2,7 @@ import GhostContentAPI from "@tryghost/content-api"
 
 const api = new GhostContentAPI({
   url: `https://catcarbonell.ghost.io` ,
-  key: `3e7e90540e92f57172000609ad`,
+  key: `${process.env.content}` ,
   version: "v3"
 });  
 

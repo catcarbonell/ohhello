@@ -109,24 +109,18 @@ a:hover {
 
 .post-style blockquote{
     display: block;
+    background-color: #73727b;
     margin-left: 1rem;
-    padding-left: 1rem;
     margin-bottom: 1.5rem;
+    padding: 1rem ;
     border-left: solid 5px#665D69;
 }
 
-/* .post-style pre {
-    font-family: 'Space Mono', monospace;
-    width: min-content;
-    height: auto;
-    margin: 2rem auto;
-    padding: 20px;
-    white-space: pre-wrap; 
-    overflow-x: auto; 
+.post-style pre {
+    background-color:#665D69;
+    border-radius: 10px; 
+    padding: 20px 30px;
+   
 }
-.post-style code {
-    width: 75%;
-} */
-
 
 @tailwind utilities;
