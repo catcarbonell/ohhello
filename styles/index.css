@@ -2,7 +2,7 @@
 @tailwind base;
 @tailwind components;
 /* purgecss end ignore */
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Nixie+One&family=Nunito:wght@300;400;900&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Nunito:wght@300;400;900&family=Space+Mono:wght@400;700&display=swap');
 
 body {
     background-color: #807F89;
@@ -22,61 +22,111 @@ h2 {
     color: #D7DBD1;
     font-size: 1.5rem;
     font-weight: 900;
-    font-family: 'Courier Prime', monospace;
+    font-family: 'Nunito', sans-serif;
 }
+
 h3 {
+    color: #665D69;
     font-size: 13px;
-    text-transform: uppercase;
     letter-spacing: 1px;
     font-family: 'Nunito', sans-serif;
 }
 
 h4 {
     font-size: 13px;
-    font-family: 'Space Mono', monospace;    
+    font-family: 'Space Mono', monospace;
+    text-transform: uppercase;
 }
 
-h5 {
-    font-size: 13px;
-    font-family: 'Space Mono', monospace;    
-}
 
 a:link, a:visited {
     color: #F9D5D3;
 }
 a:hover {
-    color:#BDC9DD;
-}
-pre {
-    background-color:  #665D69;
-}
-code {
-    color: #fff9f5;
-    padding: 4px;
-    margin: 7px auto;
-    font-family: 'Space Mono', monospace;
+    color: #F9D5D3;
 }
 
 #menu {
     height: 100vh;   
 }
-.post-style p{
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
+
+/* ======================= */
+/* ===== POST STYLES ===== */
+/* ======================= */
+
+.post-style img {
+    border-radius: 20px;
+    margin: 1.5rem auto;
 }
-.post-style h2{
-    margin-bottom: 1.5rem;
+
+.post-style  p {
+    font-size: 1rem;
+    margin: 1.5rem auto;
 }
-.post-style h3{
+
+.post-style h2 {
+    color: #D7DBD1;
+    margin: 1.5rem auto;
+    text-transform: none;;
+}
+.post-style h3 {
+    color:#D7DBD1;
     font-size: 1.3rem;
     font-weight: 900;
+    margin: 1.5rem auto;
 }
+.post-style h4 {
+    background-color:#665D69;
+    margin: 1.5rem auto;
+}
+.post-style hr {
+    width: 50%;
+    margin: 1.5rem auto;
+    border: solid 1px #665D69;
+}
+.post-style a:link, a:visited {
+    background-color:#665D69;
+    font-weight: 900;
+    padding: 0 10px;
+    margin: 0 5px;
+}
+
+.post-style a:hover {
+    color: #D7DBD1;
+    text-decoration: underline;
+}
+
+.post-style ul {
+    margin: 10px 0 10px 50px;
+}
+
+.post-style li {
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    list-style: disc;
+}
+
+
 .post-style blockquote{
     display: block;
     margin-left: 1rem;
     padding-left: 1rem;
     margin-bottom: 1.5rem;
-    border-left: solid 5px #665D69;
+    border-left: solid 5px#665D69;
 }
+
+/* .post-style pre {
+    font-family: 'Space Mono', monospace;
+    width: min-content;
+    height: auto;
+    margin: 2rem auto;
+    padding: 20px;
+    white-space: pre-wrap; 
+    overflow-x: auto; 
+}
+.post-style code {
+    width: 75%;
+} */
+
 
 @tailwind utilities;

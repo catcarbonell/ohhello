@@ -14,13 +14,16 @@
     "@fortawesome/free-solid-svg-icons": "^5.14.0",
     "@fortawesome/react-fontawesome": "^0.1.11",
     "@tryghost/content-api": "^1.4.4",
+    "babel-plugin-prismjs": "^2.0.1",
     "date-fns": "^2.16.1",
     "gsap": "^3.5.1",
     "next": "9.5.3",
+    "prismjs": "^1.21.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1"
   },
   "devDependencies": {
+    "@babel/plugin-transform-react-jsx": "^7.10.4",
     "@fullhuman/postcss-purgecss": "^2.3.0",
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^1.8.10"

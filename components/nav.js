@@ -25,16 +25,15 @@ const Nav = () => {
 
     return(
         <div className="w-screen flex flex-row md:px-4 md:py-2">
-            <div className="flex flex-col justify-start w-5/6 md:ml-6 md:w-1/2 pl-4 pt-2 md:p-0">
+            {/* <div className="flex flex-col justify-start w-5/6 md:ml-6 md:w-1/2 pl-4 pt-2 md:p-0">
                <Link href="/Home" as="/">
                     <a>
-                        <h1 className="lowercase">@catcarbn</h1>
-                        <h3> UX/UI Engineer &amp;&amp; Illustrator </h3>
+                       Logo
                     </a>
                 </Link> 
-            </div>
+            </div> */}
 
-            <div className="flex items-center mt-2 justify-end w-1/6 md:w-1/2">
+            <div className="flex items-center mt-8 justify-end w-full">
                 <div id="menu-btn" className="fixed z-30 bg-custom-shadow hover:bg-custom-lavender active:bg-custom-lavender hover:text-custom-shadow active:text-custom-shadow rounded-full p-2 mr-4 md:mr-6">
                     <div onClick={toggleMenu} className="cursor-pointer font-bold">
                         <FontAwesomeIcon icon={faEllipsisH} />
