@@ -4,10 +4,7 @@ import Link from 'next/link';
 import DateComponent from '../../components/layout/DateComponent'
 import { getPosts } from '../api/posts';
 
-
-
 const Blog = (props) => {
-   
 
     return(
       <>
@@ -18,7 +15,6 @@ const Blog = (props) => {
         <div className="flex flex-row flex-wrap md:w-5/6 justify-start my-10 mx-auto">
 
           {props.posts.map(post => (
-
 
             <div key={post.id} className="w-screen md:max-w-sm md:mr-2 mb-2 shadow-lg">
               <div className="absolute w-full max-w-sm z-10 bg-custom-shadow bg-opacity-75 p-4 shadow-lg">
@@ -34,14 +30,12 @@ const Blog = (props) => {
               </a></Link>
             </div>
 
-
           ))}
+
         </div>
       </>   
     )
 }
-
-// why does this go here???
 
 Blog.getInitialProps = async () => {
     const posts = await getPosts();

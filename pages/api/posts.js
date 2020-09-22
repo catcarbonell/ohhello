@@ -26,3 +26,13 @@ export async function getPosts() {
         console.error(err);
       });
   }
+
+  export async function getLatestPost() {
+    return await api.posts
+    .browse({
+      limit: 3
+    })
+    .catch(err => {
+      console.error(err);
+    });
+  }
