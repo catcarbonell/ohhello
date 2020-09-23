@@ -1,7 +1,7 @@
 
 const NavItem = (props) => {
     return(
-    <div className="m-2 p-2 uppercase cursor-pointer hover:text-custom-airplant hover:bg-custom-shadow">
+    <div className="m-2 p-2 uppercase cursor-pointer hover:text-custom-flamingo">
         <p>{props.text}</p>
     </div>
     )

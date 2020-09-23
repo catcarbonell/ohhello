@@ -1,32 +1,59 @@
 /* purgecss start ignore */
 @tailwind base;
+body {
+    background: url('../public/keyboardbg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: 
+      linear-gradient(
+        0deg, 
+      rgba(2,0,36,0.4) 0%, 
+      rgba(55,30,76,0.8) 50%, 
+      rgba(92,51,127,0.9) 100%
+      );
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
 @tailwind components;
 /* purgecss end ignore */
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Nunito:wght@300;400;900&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;900&family=Space+Mono:wght@400;700&display=swap');
 
 body {
-    background-color: #807F89;
-    color: #feefe9;
+    background-color: #21183c;
+    color: #f0e2fd;
     font-size: 13px;
     font-family: 'Nunito', sans-serif;
     letter-spacing: 0.5px;
 }
 
 h1 {
-    color: #E0D9E2;
+    color: #ccb8fc;
     font-size:1.5rem;
     font-family: 'Space Mono', monospace;
 }
 
 h2 {
-    color: #D7DBD1;
     font-size: 1.5rem;
     font-weight: 900;
     font-family: 'Nunito', sans-serif;
 }
 
 h3 {
-    color: #665D69;
+    color: #ccb8fc;
     font-size: 13px;
     letter-spacing: 1px;
     font-family: 'Nunito', sans-serif;
@@ -38,16 +65,32 @@ h4 {
     text-transform: uppercase;
 }
 
-
 a:link, a:visited {
-    color: #F9D5D3;
+    color: #ff68f9;
 }
 a:hover {
-    color: #F9D5D3;
+    color: #ffccfd;
 }
+
+footer a:link, a:visited {
+    color: #f0e2fd;
+}
+footer a:hover {
+    color: #ff68f9;
+}
+
+/* ======================= */
+/* ===== NAV STYLES ===== */
+/* ======================= */
 
 #menu {
     height: 100vh;   
+}
+#menu a:link, #menu a:visited {
+    color:#ffccfd;
+}
+#menu a:hover {
+    color:#ff68f9;
 }
 
 /* ======================= */
@@ -55,44 +98,42 @@ a:hover {
 /* ======================= */
 
 .post-style img {
+    width: 75%;
     border-radius: 20px;
     margin: 1.5rem auto;
+    box-shadow: 5px 10px 10px #351a4c;
 }
 
 .post-style  p {
     font-size: 1rem;
-    margin: 1.5rem auto;
+    margin: 2rem auto;
 }
 
 .post-style h2 {
-    color: #D7DBD1;
-    margin: 1.5rem auto;
+    color: #ff8afa;
+    margin: 2rem auto;
     text-transform: none;;
 }
 .post-style h3 {
-    color:#D7DBD1;
+    color:#ff8afa;
     font-size: 1.3rem;
     font-weight: 900;
-    margin: 1.5rem auto;
+    margin: 2rem auto;
 }
 .post-style h4 {
-    background-color:#665D69;
-    margin: 1.5rem auto;
+    margin: 2rem auto;
 }
 .post-style hr {
     width: 50%;
-    margin: 1.5rem auto;
-    border: solid 1px #665D69;
+    margin: 75px auto;
+    border: solid 1px#f0e2fd;
 }
 .post-style a:link, a:visited {
-    background-color:#665D69;
     font-weight: 900;
-    padding: 0 10px;
-    margin: 0 5px;
 }
 
 .post-style a:hover {
-    color: #D7DBD1;
+    color:   #ff68f9;
     text-decoration: underline;
 }
 
@@ -106,21 +147,29 @@ a:hover {
     list-style: disc;
 }
 
+.post-style li a:link, a:visited {
+    color: #f0e2fd;
+}
+.post-style li a:hover {
+    color:  #ff68f9;
+    text-decoration: none;
+}
 
 .post-style blockquote{
     display: block;
-    background-color: #73727b;
+    background-color: rgba(92,51,127,0.5);
     margin-left: 1rem;
     margin-bottom: 1.5rem;
     padding: 1rem ;
-    border-left: solid 5px#665D69;
+    border-left: solid 5px#ff8afa;
+    font-size:1.5rem;
+    font-style: italic;
 }
 
 .post-style pre {
-    background-color:#665D69;
+    border: solid 1px #2a1f4c;
     border-radius: 10px; 
-    padding: 20px 30px;
-   
+    box-shadow: 5px 7px 10px #351a4c;
 }
 
 @tailwind utilities;
