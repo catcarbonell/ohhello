@@ -11,7 +11,7 @@ const Home = ()=> {
         <link rel="icon" href="/ccfavicon.ico" />
       </Head>
       <div className="w-screen flex flex-col">
-
+       
         <Intro />
 
       </div>
