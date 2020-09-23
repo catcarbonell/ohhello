@@ -35,7 +35,7 @@ body::before {
 body {
     background-color: #21183c;
     color: #f0e2fd;
-    font-size: 13px;
+    font-size: 14px;
     font-family: 'Nunito', sans-serif;
     letter-spacing: 0.5px;
 }
@@ -54,6 +54,8 @@ h2 {
 
 h3 {
     color: #ccb8fc;
+    text-transform: uppercase;
+    font-weight: 900;
     font-size: 13px;
     letter-spacing: 1px;
     font-family: 'Nunito', sans-serif;
@@ -84,6 +86,14 @@ footer a:hover {
 }
 .socials a:hover {
     color: #ff68f9;
+}
+
+.about a:link, a:visited {
+    color: #ff68f9;
+}
+
+.about a:hover {
+    color: #f0e2fd;
 }
 
 /* ======================= */

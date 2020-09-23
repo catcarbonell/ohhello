@@ -10,9 +10,9 @@ function MyApp({ Component, pageProps }) {
   return(
     <>
    
-    <div className="h-screen flex flex-col place-items-center overflow-x-hidden relative">
+    <div className="flex flex-col place-items-center overflow-x-hidden relative">
       <Nav />
-      <main className="flex flex-col flex-grow justify-center">
+      <main className="flex flex-col flex-grow">
         <Component {...pageProps} />
       </main>
       <Footer />

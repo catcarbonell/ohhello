@@ -24,8 +24,8 @@ const Nav = () => {
      
 
     return(
-        <div className="w-screen flex flex-row  items-center  md:px-4 md:py-4">
-            <div className="flex flex-col justify-start w-5/6 md:ml-6 md:w-1/2 pl-4 pt-2 md:p-0">
+        <div className="w-screen flex flex-row  items-center">
+            {/* <div className="flex flex-col justify-start w-5/6 md:ml-6 md:w-1/2 pl-4 pt-2 md:p-0">
                <Link href="/Home" as="/">
                     <a>
                         <div className="flex flex-col justify-center align-center self-center ">
@@ -36,9 +36,9 @@ const Nav = () => {
                         </div>
                     </a>
                 </Link> 
-            </div>
+            </div> */}
 
-            <div className="flex items-center justify-end w-1/2">
+            <div className="flex items-center justify-end w-full mt-8 mr-4">
                 <div id="menu-btn" className="fixed z-30 w-8 p-2 mr-4 md:mr-6 bg-opacity-75 bg-custom-blk hover:bg-custom-sakura active:bg-custom-sakura hover:text-custom-flamingo active:text-custom-flamingo rounded-full">
                     <div onClick={toggleMenu} className="cursor-pointer font-bold">
                         <FontAwesomeIcon icon={faEllipsisH} />
