@@ -1,7 +1,10 @@
 
 import Head from 'next/head'
 import Link from 'next/link'
+import Container from '../components/layout/Container'
 import DateComponent from '../components/layout/DateComponent'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHtml5, faCss3, faJsSquare, faReact, faSass } from '@fortawesome/free-brands-svg-icons'
 import { getLatestPost } from './api/posts';
 
 const Home = (props)=> {
@@ -13,34 +16,71 @@ const Home = (props)=> {
       </Head>
       <div className="w-screen flex flex-col">
        
-        {/* INTRO */}
-        <div className="m-auto flex flex-col justify-center align-center h-screen mb-64">
+        <Container>
           <div className="min-w-0 w-5/6 mx-auto md:max-w-xl">
             <div>
               <h2>
                 Need someone <br />
-                
                 with front-end development prowess and a designer's sensibilities?
               </h2>
-              <h2 className="underline text-4xl my-6 font-bold text-custom-sakura">
+              <h2 className="text-4xl my-6 font-bold text-custom-sakura">
                 I got you.
               </h2>
             </div>
-            <div className="my-6">
-              <p className="text-xl">Need proof?</p>
+            <div className="mt-20 md:mt-12 flex flex-col md:flex-row">
+              <Link href="/portfolio">
+                <a className="w-auto text-center px-4 py-2 border-solid border-2 border-custom-sakura 
+                              uppercase rounded-lg text-lg bg-custom-blk
+                              hover:bg-custom-flamingo">
+                  View my work
+                </a>
+              </Link>
             </div>
-
-            <div className="my-6">
-              <Link href="/portfolio"><a className="px-4 py-2 border-solid border-2 border-custom-sakura uppercase rounded-lg text-lg hover:border-custom-flamingo hover:text-custom-flamingo">
-                See my work &rarr;
-                </a></Link>
-            </div>
-           
-
           </div>
-        </div>
+        </Container>
 
-        {/* PORTFOLIO */}
+
+        <div className="h-screen flex flex-col md:flex-row justify-center align-center mx-auto w-5/6 mb-64">
+          <div className="mx-auto md:mx-0 mb-4 md:mb-0 md:mr-8">
+            <img className="rounded-full shadow-lg w-32 md:w-40 md:h-40" src="/headshot.jpg" alt="My face." />
+          </div>
+
+          <div className="w-5/6 md:w-1/4">
+            <h2 className="text-custom-lavender">Hi! I'm Cat!</h2>
+            <p>
+              I'm an SF Bay Area native with a penchant for all things
+              aesthetic! I can speed up your production process by
+              at least 30%-- guaranteed!
+            </p>
+
+            <div className="mt-10 md:mt-12 mx-auto md:mx-0">
+              <Link href="/contact#calendly">
+                <a className="w-auto text-center px-4 py-2 border-solid border-2 border-custom-sakura 
+                              uppercase rounded-lg text-lg bg-custom-blk
+                              hover:bg-custom-flamingo">
+                  'splain how!
+                </a>
+              </Link>
+            </div>
+
+            <div>
+              <h3 className="mt-10 uppercase font-bold">My Stack:</h3>
+              <div className="flex flex-row">
+                <FontAwesomeIcon className="w-8 mr-2" icon={faHtml5} />
+                <FontAwesomeIcon className="w-8 mr-2" icon={faCss3} />
+                <FontAwesomeIcon className="w-8 mr-2" icon={faJsSquare} />      
+                <FontAwesomeIcon className="w-8 mr-2" icon={faReact} />
+                <FontAwesomeIcon className="w-8 mr-2" icon={faSass} />
+              </div>
+            </div>
+            <div className="mt-6">
+              <Link href="/about"><a className="hover:text-custom-flamingo uppercase">Learn more &rarr;</a></Link>
+            </div>
+          
+          </div>
+          
+          </div>
+
 
 
         {/* LATEST BLOG POSTS */}
@@ -54,7 +94,7 @@ const Home = (props)=> {
             <div key={post.id} className="md:w-1/3 w-5/6 mx-auto mb-12 md:mx-2 h-64 rounded-b-lg overflow-hidden shadow-xl ">
               <div className="rounded-t-lg pt-2 pl-2 pb-2 bg-opacity-50 bg-custom-blk">
                 <Link href={`/blog/[slug]`} as={`/blog/${post.slug}`}><a>
-                  <h2 className="text-custom-sakura hover:text-custom-lavender">
+                  <h2 className="text-custom-sakura hover:text-custom-flamingo">
                     {post.title}
                   </h2>
                   <DateComponent dateString={post.published_at} />

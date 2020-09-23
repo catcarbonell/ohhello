@@ -79,6 +79,13 @@ footer a:hover {
     color: #ff68f9;
 }
 
+.socials a:link, a:visited {
+    color: #f0e2fd;
+}
+.socials a:hover {
+    color: #ff68f9;
+}
+
 /* ======================= */
 /* ===== NAV STYLES ===== */
 /* ======================= */
