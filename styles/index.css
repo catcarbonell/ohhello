@@ -71,7 +71,8 @@ a:link, a:visited {
     color:#ffccfd;
 }
 a:hover {
-    color:#ff68f9;
+    color: #f0e2fd;
+    background-color:#ff68f9;
 }
 
 footer a:link, a:visited {

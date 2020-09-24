@@ -45,7 +45,7 @@ const Intro = () =>{
             <Link href="/about">
               <a className="w-auto text-center px-4 py-2 border-solid border-2 border-custom-sakura 
                             uppercase rounded-lg text-lg bg-custom-blk
-                            hover:bg-custom-flamingo">
+                            hover:bg-custom-flamingo hover:text-custom-sakura">
                 lol what?
               </a>
             </Link>
