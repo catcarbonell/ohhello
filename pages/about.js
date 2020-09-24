@@ -97,7 +97,7 @@ export default function About(){
                             <br />
                             Web Design and Development
                         </p>
-                        <p className="mt-2">Jan 2020 - Apr 2020</p>
+                        <p className="mt-2">May 2014 - July 2016</p>
                     </div>
                 </div>
                 <div className="w-full md:w-1/2 p-4">
