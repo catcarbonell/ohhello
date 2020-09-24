@@ -18,7 +18,7 @@ export default function About(){
                     
                     <div className="mx-auto md:mx-0 mb-4 md:mb-0 md:mr-8 align-start text-center">
                         <h2 className="text-custom-sakura mb-2">Hi! I'm Cat!</h2>
-                        <img className="rounded-full shadow-lg w-32 md:w-40 md:h-40" src="/headshot.jpg" alt="My face." />
+                        <img src="/headshot.jpg" alt="My face." className="rounded-full shadow-lg w-32 md:w-40 md:h-40"  />
                         <div>
                             {/* <h3 className="mt-10 uppercase font-bold">Primary Stack:</h3> */}
                             <div className="flex flex-row justify-center mt-4">

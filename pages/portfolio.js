@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Project from '../components/project'
 
-import Container from '../components/layout/Container'
 
 const Portfolio = () => {
     return(
