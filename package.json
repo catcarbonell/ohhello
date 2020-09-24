@@ -16,6 +16,7 @@
     "@tryghost/content-api": "^1.4.4",
     "babel-plugin-prismjs": "^2.0.1",
     "date-fns": "^2.16.1",
+    "dotenv": "^8.2.0",
     "gsap": "^3.5.1",
     "next": "9.5.3",
     "prismjs": "^1.21.0",
