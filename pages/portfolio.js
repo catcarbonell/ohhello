@@ -35,7 +35,7 @@ const Portfolio = () => {
                     description="A HackerNews clone of sorts, made with React and TailwindCSS. DB hosted by Firebase."
                     img="/portfolio/slackernews.png"
                     role="Frontend Developer"
-                    stack="React, TailwindCSS, Firebase "
+                    stack="React, TailwindCSS, Firebase"
                     github="https://github.com/gavischneider/slacker-news"
                     demo="https://slacker-news.vercel.app/"
                 />
@@ -45,7 +45,7 @@ const Portfolio = () => {
                     description="A web app product delivery service that puts the focus on local shops and restaurants."
                     img="/portfolio/ustoyou.png"
                     role="Frontend Developer"
-                    stack="React, TailwindCSS, Python/Django"
+                    stack="React, TailwindCSS, Django"
                     github="https://github.com/RoblesAarik/hackathon_frontend"
                     demo="https://hackathon-frontend-v01.vercel.app/"
                 />

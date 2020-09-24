@@ -19,7 +19,7 @@ const Blog = (props) => {
               <div className="w-screen md:max-w-sm md:mr-2 mb-2 shadow-lg">
                   <div className="absolute w-full max-w-sm  z-10 bg-custom-blk bg-opacity-85 hover:text-custom-pink hover:bg-opacity-100  p-4 shadow-lg">
                     <DateComponent dateString={post.published_at} />
-                    <h3 className="uppercase text-custom-sakura font-bold">{post.title}</h3>
+                    <h3 className="uppercase text-sm text-custom-sakura font-bold">{post.title}</h3>
                   </div>
                   <div>
                     <img src={post.feature_image} className="object-cover h-64 w-full" alt={post.title} />

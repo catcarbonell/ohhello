@@ -83,7 +83,7 @@ export default function About(){
                         <p className="mt-2">Feb 2018 - Sep 2019</p>
                     </div>
                 </div>
-                <div className="w-fullmd:w-1/2 p-4">
+                <div className="w-full md:w-1/2 p-4">
                     <h2 className="text-custom-sakura">Education</h2>
                     <div>
                         <h3>General Assembly</h3> 

@@ -8,7 +8,7 @@ export default function Project(props){
             </div>
             <div className="md:w-1/2 md:pl-6 pl-4 h-xs md:h-auto bg-custom-blk rounded-b-lg md:rounded-r-lg bg-opacity-75 flex flex-col justify-center align-center">
                 <div className="w-full md:w-5/6">
-                    <h2>{props.title}</h2>
+                    <h2 className="text-custom-sakura">{props.title}</h2>
 
                     <p>
                         {props.description}    
