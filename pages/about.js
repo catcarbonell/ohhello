@@ -3,7 +3,7 @@ import Link from 'next/link'
 import StackItem from '../components/layout/stackItem'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
-import { faHtml5, faJsSquare, faReact, faSass, faPython, faCss3Alt } from '@fortawesome/free-brands-svg-icons'
+import { faHtml5, faJsSquare, faReact, faSass, faCss3Alt } from '@fortawesome/free-brands-svg-icons'
 
 export default function About(){
     return(
@@ -55,12 +55,11 @@ export default function About(){
                 {/* STACK */}
                 <div className="w-full md:w-1/4 mb-10 md:mb-0">
                     <h2 className="mb-4 uppercase text-custom-sakura">Stack</h2>
-                    <StackItem text="HTML" icon={faHtml5} />
-                    <StackItem text="CSS" icon={faCss3Alt} />
-                    <StackItem text="JavaScript" icon={faJsSquare} />
-                    <StackItem text="React" icon={faReact} />
-                    <StackItem text="Sass/SCSS" icon={faSass} />
-                    <StackItem text="Python" icon={faPython} />
+                    <StackItem text="HTML" color="#ff9a84" icon={faHtml5} />
+                    <StackItem text="CSS" color="#6993f5" icon={faCss3Alt} />
+                    <StackItem text="JavaScript" color="#f6e995" icon={faJsSquare} />
+                    <StackItem text="React" color="#a0e9fc" icon={faReact} />
+                    <StackItem text="Sass/SCSS" color="#d785ad" icon={faSass} />
 
                 </div>
 
@@ -77,9 +76,7 @@ export default function About(){
                             Freelance 
                         </h3> 
                         <p>
-                            Frontend Engineer
-                            <br />
-                            and UX Designer
+                            Frontend Engineer and UX Designer
                         </p>
                         <p className="mt-2">Jan 2013 - current</p>
                     </div>
@@ -137,7 +134,7 @@ export default function About(){
             </div>
 
             <div className="mx-auto mt-8 w-5/6">       
-                <a href="#experience">
+                <a href="#top">
                     <FontAwesomeIcon className="w-6 mx-auto" icon={faChevronUp} />
                 </a>
                 <p className="text-center uppercase hover:bg-color-none hover:text-custom-flamingo">Back to top</p>
