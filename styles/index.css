@@ -195,4 +195,16 @@ footer a:hover {
     box-shadow: 5px 7px 10px #351a4c;
 }
 
+
+@media only screen and (max-width: 600px) {
+    body {
+        background: url('../public/keyboardbg.jpg') no-repeat left top fixed;
+        -webkit-background-size: 150% 100vh;
+        -moz-background-size:  150% 100vh;
+        -o-background-size: 150% 100vh;
+        background-size:  150% 100vh;
+          
+    }
+  }
+
 @tailwind utilities;
