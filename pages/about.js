@@ -50,31 +50,32 @@ export default function About(){
         {/* SKILLS/EXPERIENCE  */}
         <div id="experience" className="mt-64 md:mt-10 flex flex-col justify-center items-center">
 
-            <div className="w-full px-2 md:px-10 flex flex-col md:flex-row">
+            <div className="w-full px-2 md:px-10 flex flex-row">
                 {/* STACK */}
                 <div className="w-5/6 md:w-1/3 mb-10 md:mb-0">
                     <h2 className="mb-4 uppercase text-custom-sakura">Stack</h2>
-                    <div className="mb-2 flex flex-row">
+
+                    <div className="w-full mb-2 flex flex-row">
                         <FontAwesomeIcon className="w-6" icon={faHtml5} />
                         <h3 className="ml-2 uppercase">Html</h3>
                     </div>
-                    <div className="mb-2 flex flex-row">
+                    <div className="w-full mb-2 flex flex-row">
                         <FontAwesomeIcon className="w-6" icon={faCss3} />
                         <h3 className="ml-2 uppercase">CSS</h3> 
                     </div>
-                    <div className="mb-2 flex flex-row">
+                    <div className="w-full mb-2 flex flex-row">
                         <FontAwesomeIcon className="w-6" icon={faJsSquare} />
                         <h3 className="ml-2">JavaScript</h3>
                     </div>
-                    <div className="mb-2 flex flex-row">
+                    <div className="w-full mb-2 flex flex-row">
                         <FontAwesomeIcon className="w-6" icon={faReact} />
                         <h3 className="ml-2">React</h3>
                     </div>
-                    <div className="mb-2 flex flex-row">
+                    <div className="w-full mb-2 flex flex-row">
                         <FontAwesomeIcon className="w-6" icon={faSass} />
                         <h3 className="ml-2">Sass/SCSS</h3>
                     </div>
-                    <div className="mb-2 flex flex-row">
+                    <div className="w-full mb-2 flex flex-row">
                         <FontAwesomeIcon className="w-6" icon={faPython} />
                         <h3 className="ml-2">Python</h3>
                     </div>
