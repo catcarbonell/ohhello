@@ -3,7 +3,7 @@ import { TweenMax } from "gsap"
 import Link from 'next/link'
 import NavItem from './layout/NavItem'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEllipsisH } from '@fortawesome/free-solid-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 
 const Nav = () => {
     const [state, setState] = useState(true);
@@ -27,9 +27,9 @@ const Nav = () => {
         <div className="w-screen flex flex-row  items-center">
 
             <div className="flex items-center justify-end w-full mt-8 mr-4">
-                <div id="menu-btn" className="fixed z-30 w-10 p-2 mt-6 mr-4 md:mr-6 bg-opacity-75 bg-custom-blk hover:bg-custom-sakura active:bg-custom-sakura hover:text-custom-flamingo active:text-custom-flamingo rounded-full">
-                    <div onClick={toggleMenu} className="cursor-pointer font-bold">
-                        <FontAwesomeIcon icon={faEllipsisH} />
+                <div id="menu-btn" className="fixed z-30 mt-6 mr-4 md:mr-6 bg-opacity-75 text-custom-flamingo hover:text-custom-sakura active:text-custom-sakura">
+                    <div onClick={toggleMenu} className="p-2 w-10 bg-custom-blk rounded-lg opacity-75 cursor-pointer font-bold">
+                        <FontAwesomeIcon icon={faBars} />
                     </div>
                 </div>
                

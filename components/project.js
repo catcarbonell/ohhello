@@ -2,9 +2,9 @@
 export default function Project(props){
     
     return(
-        <div className="mx-auto md:h-xs h-screen mt-10 shadow-lg flex flex-col md:flex-row">
+        <div className="mx-auto md:h-xs h-screen mt-10 flex flex-col md:flex-row">
             <div className="md:w-1/2">
-                <img className="rounded-t-lg md:rounded-l-lg object-cover object-center h-full w-full" src={props.img} alt={props.title} />
+                <img className="rounded-t-lg md:rounded-l-lg md:rounded-r-none object-cover object-center h-full w-full" src={props.img} alt={props.title} />
             </div>
             <div className="md:w-1/2 p-4 md:pl-6 pl-4 h-xs md:h-auto bg-custom-blk rounded-b-lg md:rounded-r-lg bg-opacity-75 flex flex-col justify-center align-center">
                 <div className="w-full md:w-5/6">

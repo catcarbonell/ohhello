@@ -50,7 +50,7 @@ export default function About(){
         {/* SKILLS/EXPERIENCE  */}
         <div id="experience" className="mt-64 md:mt-10 flex flex-col justify-center items-center">
 
-            <div className="w-full px-10 flex flex-col md:flex-row">
+            <div className="w-full px-2 md:px-10 flex flex-col md:flex-row">
                 {/* STACK */}
                 <div className="w-5/6 md:w-1/3 mb-10 md:mb-0">
                     <h2 className="mb-4 uppercase text-custom-sakura">Stack</h2>
@@ -140,7 +140,7 @@ export default function About(){
                     <a><h2 className="uppercase">View my portfolio</h2></a>
                 </Link>
              </div>
-             <div className="mb-4 border-2 rounded-lg w-5/6 md:w-1/2 text-center hover:border-custom-flamingo hover:bg-custom-flamingo flex justify-center self-center p-4">
+            <div className="mb-4 border-2 rounded-lg w-5/6 md:w-1/2 text-center hover:border-custom-flamingo hover:bg-custom-flamingo flex justify-center self-center p-4">
                 <Link href="/blog">
                     <a><h2 className="uppercase">Read my blog</h2></a>
                 </Link>

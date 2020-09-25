@@ -34,13 +34,10 @@ const PostPage = (props) => {
                     </div>
                 </div>
                
-                
-                <div className="w-xs md:w-4/6 mx-auto md:pb-64" dangerouslySetInnerHTML={{ __html: props.post.html }} />
-                
-    
+                {/* POST CONTENT */}
+                <div className="w-xs md:w-4/6 mx-auto pb-64" 
+                    dangerouslySetInnerHTML={{ __html: props.post.html }} />
                 </div>
-
-               
         </>
     )
 }
