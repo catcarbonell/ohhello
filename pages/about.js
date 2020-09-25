@@ -53,7 +53,7 @@ export default function About(){
 
             <div className="w-full flex flex-col md:flex-row justify-center">
                 {/* STACK */}
-                <div className="w-full border-2 md:w-1/4 mb-10 md:mb-0">
+                <div className="w-full md:w-1/4 mb-10 md:mb-0">
                     <h2 className="mb-4 uppercase text-custom-sakura">Stack</h2>
                     <StackItem text="HTML" icon={faHtml5} />
                     <StackItem text="CSS" icon={faCss3Alt} />
