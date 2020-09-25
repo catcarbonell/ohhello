@@ -199,10 +199,10 @@ footer a:hover {
 @media only screen and (max-width: 600px) {
     body {
         background: url('../public/keyboardbg.jpg') no-repeat left top fixed;
-        -webkit-background-size: 150% 100%;
-        -moz-background-size:  150% 100%;
-        -o-background-size: 150% 100%;
-        background-size:  150% 100%;
+        -webkit-background-size: 100% 100%;
+        -moz-background-size:  100% 100%;
+        -o-background-size: 100% 100%;
+        background-size:  100% 100%;
         background-attachment: fixed;
           
     }
