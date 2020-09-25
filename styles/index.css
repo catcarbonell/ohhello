@@ -203,6 +203,7 @@ footer a:hover {
         -moz-background-size:  150% 100vh;
         -o-background-size: 150% 100vh;
         background-size:  150% 100vh;
+        background-attachment: fixed;
           
     }
   }
