@@ -10,7 +10,7 @@ const Nav = () => {
     const moveMenu = useRef(null);
 
     useEffect(()=>{
-        TweenMax.to(moveMenu.current, 0, { x: 500 })
+        TweenMax.to(moveMenu.current, 0, { x: 1000 })
     }, [])
 
     const toggleMenu = () => {
@@ -18,7 +18,7 @@ const Nav = () => {
         if(state === true){
             TweenMax.to(moveMenu.current, {duration: 0.7, x: 1})
         } else {
-            TweenMax.to(moveMenu.current, {duration: 0.7, x: 500})
+            TweenMax.to(moveMenu.current, {duration: 0.7, x: 1000})
         }
     };
      

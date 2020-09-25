@@ -35,7 +35,8 @@ export default function About(){
                         <p className="mt-2">
                             Currently, I am a <span className="font-bold text-custom-lavender">frontend engineer intern</span> at a startup through <span className="font-bold text-custom-lavender">Open Water Accelerator</span>!
                         </p>
-                        <div className="mt-8 w-5/6">
+                        <div className="mx-auto mt-8 w-5/6">
+                           
                             <a href="#experience">
                                <FontAwesomeIcon className="w-6 mx-auto" icon={faChevronDown} />
                             </a>
@@ -45,11 +46,11 @@ export default function About(){
                 </div>
                
             </div>
-
-        <div id="experience" className="h-screen flex flex-col justify-center items-center">
+        
+        {/* SKILLS/EXPERIENCE  */}
+        <div id="experience" className="mt-64 md:mt-10 flex flex-col justify-center items-center">
 
             <div className="w-full px-10 flex flex-col md:flex-row">
-
                 {/* STACK */}
                 <div className="w-5/6 md:w-1/3 mb-10 md:mb-0">
                     <h2 className="mb-4 uppercase text-custom-sakura">Stack</h2>
@@ -124,9 +125,16 @@ export default function About(){
                     </div>
                 </div>
             </div>    
+
+            <div className="mt-8 w-5/6">
+                <a href="#end">
+                    <FontAwesomeIcon className="w-6 mx-auto" icon={faChevronDown} />
+                </a>
+            </div>
         </div>
 
-        <div id="end" className="h-screen flex flex-col justify-center">
+        {/* END */}
+        <div id="end" className="mt-64 md:mt-10 mb-64 flex flex-col justify-center">
             <div className="mb-4 border-2 rounded-lg w-5/6 md:w-1/2 text-center hover:border-custom-flamingo hover:bg-custom-flamingo flex justify-center self-center p-4">
                 <Link href="/portfolio">
                     <a><h2 className="uppercase">View my portfolio</h2></a>
@@ -143,10 +151,11 @@ export default function About(){
                 </Link>
             </div>
 
-            <div className="flex justify-center">
+            <div className="flex flex-col justify-center items-center">
                 <a href="#top">
                     <FontAwesomeIcon className="w-8 mr-2" icon={faChevronUp} />
                 </a>
+                <p className="uppercase">Back to top</p>
             </div>
         </div>
 
