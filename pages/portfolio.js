@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Project from '../components/project'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faHtml5, faCss3, faJsSquare, faReact, faSass, faPython } from '@fortawesome/free-brands-svg-icons'
 
 const Portfolio = () => {
     return(
@@ -31,16 +32,6 @@ const Portfolio = () => {
                 />
 
                 <Project 
-                    title="SlackerNews"
-                    description="A HackerNews clone of sorts, made with React and TailwindCSS. DB hosted by Firebase."
-                    img="/portfolio/slackernews.png"
-                    role="Frontend Developer"
-                    stack="React, TailwindCSS, Firebase"
-                    github="https://github.com/gavischneider/slacker-news"
-                    demo="https://slacker-news.vercel.app/"
-                />
-
-                <Project 
                     title="Us to You"
                     description="A web app product delivery service that puts the focus on local shops and restaurants."
                     img="/portfolio/ustoyou.png"
@@ -50,6 +41,7 @@ const Portfolio = () => {
                     demo="https://hackathon-frontend-v01.vercel.app/"
                 />
             </div>
+
 
         </>   
     )

@@ -54,7 +54,6 @@ h2 {
 
 h3 {
     color: #ccb8fc;
-    text-transform: uppercase;
     font-weight: 900;
     font-size: 1.3rem;
     letter-spacing: 1px;
@@ -68,7 +67,7 @@ h4 {
 }
 .bolded {
     font-weight: bold;
-    color: ;
+    color: #ffccfd;
 }
 
 a:link, a:visited {
