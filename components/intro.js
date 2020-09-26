@@ -4,7 +4,7 @@ const Intro = (props) =>{
     
     return(
 
-      <div className="w-full md:w-1/2 md:max-w-xl h-xxs md:mx-auto mt-10 flex flex-row bg-custom-blk bg-opacity-75 rounded-lg">
+      <div className="w-full lg:w-1/2 md:max-w-xl h-xxs md:mx-auto mt-10 flex flex-row bg-custom-blk bg-opacity-75 rounded-lg">
         <div className="w-full md:w-1/2 overflow-hidden rounded-l-lg">
           <Link href={props.link}><a>
             <img className="h-full w-full object-cover" src={props.img} alt={props.title} />
