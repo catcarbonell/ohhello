@@ -1,5 +1,5 @@
 import {useState, useEffect, useRef} from 'react'
-import { TweenMax } from "gsap"
+import gsap from 'gsap'
 import Link from 'next/link'
 import NavItem from './layout/NavItem'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -10,15 +10,15 @@ const Nav = () => {
     const moveMenu = useRef(null);
 
     useEffect(()=>{
-        TweenMax.to(moveMenu.current, 0, { x: 1000 })
+        gsap.to(moveMenu.current, 0, { x: 1000 })
     }, [])
 
     const toggleMenu = () => {
         setState(!state)
         if(state === true){
-            TweenMax.to(moveMenu.current, {duration: 0.7, x: 1})
+            gsap.to(moveMenu.current, {duration: 0.7, x: 1})
         } else {
-            TweenMax.to(moveMenu.current, {duration: 0.7, x: 1000})
+            gsap.to(moveMenu.current, {duration: 0.7, x: 1000})
         }
     };
      
@@ -41,7 +41,6 @@ const Nav = () => {
                         <Link href="/portfolio"><a onClick={toggleMenu}><NavItem text="Portfolio" /></a></Link>
                         <Link href="/about"><a onClick={toggleMenu}><NavItem text="About" /></a></Link>
                         <Link href="/contact"><a onClick={toggleMenu}><NavItem text="Contact" /></a></Link>
-
                     </div>
                 </nav> 
                 

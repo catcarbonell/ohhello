@@ -1,64 +1,27 @@
-import {useEffect} from 'react'
 import Link from 'next/link'
-import Container from './layout/Container'
 
-
-const Intro = () =>{
-
-    let whatIcanDo = [
-        `with front-end development prowess and designer sensibilities?`,
-        `who can design logos and stickers for your team?`,
-        `who can build a prod-ready UI in React at lightning speed?` ,
-        `whip up wireframes in Sketch ASAP?` ,
-        `who curates excellent memes?` ,
-        `who can speak both designer and engineer jargon?` ,
-        `who will and be your hype-lady and will gas you up when you need the boost?`,
-    ]
-
-    useEffect(() => {
-        let offset=0;
-        let stuffSpan = document.getElementById('stuff');
-
-        stuffSpan.innerText=whatIcanDo[0];
-        
-        whatIcanDo.forEach(function(i){
-          setTimeout(function(){ 
-            stuffSpan.innerText=i;
-          }, 4000 + offset)
-            offset += 4000
-        })
-    })
-            
+const Intro = (props) =>{
+    
     return(
-        <Container>
-          <div className="min-w-0 w-5/6 md:w-sm mx-auto md:max-w-xl">
-            <div className="flex flex-col justify-center self-center">
-              <h2>
-                Need someone <br />
-              </h2>
 
-              <div className="h-32">
-              
-                  <h2 className="text-custom-lavender" id="stuff"></h2>
+      <div className="w-full md:w-1/2 md:max-w-xl h-xxs md:mx-auto mt-10 flex flex-row bg-custom-blk bg-opacity-75 rounded-lg">
+        <div className="w-full md:w-1/2 overflow-hidden rounded-l-lg">
+          <Link href={props.link}><a>
+            <img className="h-full w-full object-cover" src={props.img} alt={props.title} />
+          </a></Link>
+        </div>
 
-              </div>
+        <div className="md:w-1/2 p-6 flex flex-col justify-center align-center">
+             
+          <Link href={props.link}><a className="hover:bg-transparent"> 
+            <h2 className="text-custom-sakura hover:text-custom-flamingo">{props.title}</h2>
+              <p>
+                  {props.description}    
+              </p>
+            </a></Link>
+         </div>
+      </div>
 
-              <h2 className="text-4xl my-6 font-bold text-custom-sakura">
-                I got you.
-              </h2>
-              
-            </div>
-            <div className="mt-20 md:mt-12 flex flex-col md:flex-row">
-              <Link href="/portfolio">
-                <a className="w-auto text-center px-4 py-2 border-solid border-2 border-custom-sakura 
-                              uppercase rounded-lg text-lg bg-custom-blk
-                              hover:bg-custom-flamingo hover:text-custom-sakura">
-                  View My Work
-                </a>
-              </Link>
-            </div>
-          </div>
-      </Container>
     )
 }
 

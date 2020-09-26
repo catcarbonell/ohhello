@@ -30,7 +30,7 @@ export async function getPosts() {
   export async function getLatestPost() {
     return await api.posts
     .browse({
-      limit: 3
+      limit: 1
     })
     .catch(err => {
       console.error(err);
