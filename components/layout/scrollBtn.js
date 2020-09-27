@@ -8,7 +8,7 @@ export default function ScrollBtn(props){
     const handleClick = (e) =>{
         e.stopPropagation()
         gsap.to(window, {
-            duration: 1,
+            duration: 0.7,
             scrollTo: {
                 y:`${props.target}`, 
                 offsetY:70

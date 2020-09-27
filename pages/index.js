@@ -32,10 +32,12 @@ const Home = ()=> {
       link: '/contact'
     },
   ]
+
   const revealRefs = useRef([])
   revealRefs.current = []
 
   useEffect(()=>{
+    gsap.fromTo("#logo",{autoAlpha:0},{duration:1, autoAlpha:1})
     
     revealRefs.current.forEach((el, index)=>{
       gsap.fromTo(el, {
@@ -69,9 +71,10 @@ const Home = ()=> {
         <title>cat | ui engineer &amp;&amp; ux designer</title>
         <link rel="icon" href="/ccfavicon.ico" />
       </Head>
+  
       <div className="w-5/6 md:w-1/2 mx-auto mt-20 mb-64 md:w-5/6 flex flex-col place-items-center">
+  
         
-          <h1>Hello World!</h1>
           <figure id="logo" className="container w-1/2 md:w-1/4 mb-4 md:mb-10">
             <img src="/cclogo.png" alt="my logo: a vector shape of a cat's head surrounded by angle brackets" />
           </figure>

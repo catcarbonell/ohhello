@@ -15,7 +15,6 @@ export default function About(){
 
     useEffect(()=>{
         gsap.fromTo("#top", {autoAlpha: 0}, {autoAlpha:1, duration:1})
-    
     },[])
 
 
