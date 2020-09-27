@@ -3,6 +3,7 @@ import { gsap } from 'gsap/dist/gsap';
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 import Head from 'next/head'
 import Intro from '../components/intro'
+import ScrollBtn from '../components/layout/scrollBtn'
 gsap.registerPlugin(ScrollTrigger);
 
 const Home = ()=> {
@@ -91,6 +92,7 @@ const Home = ()=> {
           })
         } 
       </div>
+      <ScrollBtn target="#logo" chevron={false} />
     
     </>
   )
