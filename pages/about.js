@@ -1,11 +1,24 @@
+import {useEffect} from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
-import StackItem from '../components/layout/stackItem'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { gsap } from 'gsap/dist/gsap';
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { faHtml5, faJsSquare, faReact, faSass, faCss3Alt } from '@fortawesome/free-brands-svg-icons'
+import StackItem from '../components/layout/stackItem'
+import ScrollBtn from '../components/layout/scrollBtn'
+gsap.registerPlugin(ScrollTrigger);
+
 
 export default function About(){
+
+    useEffect(()=>{
+        gsap.fromTo("#top", {autoAlpha: 0}, {autoAlpha:1, duration:1})
+    
+    },[])
+
+
     return(
         <>
             <Head>
@@ -14,9 +27,9 @@ export default function About(){
             </Head>
             
             {/* ABOUT */}
-            <div className="h-screen mx-auto flex flex-col justify-center content-center self-center">
+            <div  id="top" className="h-screen mx-auto flex flex-col justify-center content-center self-center">
           
-                <div id="top" className="w-5/6 px-4 mx-auto flex flex-col md:flex-row justify-center">
+                <div className="w-5/6 px-4 mx-auto flex flex-col md:flex-row justify-center">
                     {/* PHOTO */}
                     <div className="mx-auto md:mx-0 mb-4 md:mb-0 md:mr-8">
                         <h2 className="text-2xl text-center text-custom-sakura mb-2">Hi! I'm Cat!</h2>
@@ -41,19 +54,17 @@ export default function About(){
                 </div>
 
                 {/* CHEVRON  */}
-                <div className="mx-auto mt-8 w-5/6">       
-                    <a href="#experience">
-                        <FontAwesomeIcon className="w-6 mx-auto" icon={faChevronDown} />
-                    </a>
-                </div>
+                <ScrollBtn target="#experience" chevron={true}/>
             </div>
-        
+
             {/* SKILLS/EXPERIENCE  */}
             <div id="experience" className="mt-64 w-5/6 md:mt-10 flex flex-col mx-auto justify-center items-center">
+            
+            <ScrollBtn target="#top" chevron={false}/>
 
-            <div className="w-full flex flex-col md:flex-row justify-center">
+            <div className="scrollcomp w-full flex flex-col md:flex-row justify-center">
                 {/* STACK */}
-                <div className="w-full md:w-1/4 mb-10 md:mb-0">
+                <div id="stack" className="w-full md:w-1/4 mb-10 md:mb-0">
                     <h2 className="mb-4 uppercase text-custom-sakura">Stack</h2>
                     <StackItem text="HTML" color="#ff9a84" icon={faHtml5} />
                     <StackItem text="CSS" color="#6993f5" icon={faCss3Alt} />
@@ -64,7 +75,7 @@ export default function About(){
                 </div>
 
                 {/* EXPERIENCE */}
-                <div className="w-full md:w-1/3 mb-10 md:mb-0">
+                <div id="exp" className="w-full md:w-1/3 mb-10 md:mb-0">
                     <h2 className="mb-2 uppercase text-custom-sakura">Experience</h2>
                     <div>
                         <h3>Open Water Accelerator</h3> 
@@ -88,7 +99,7 @@ export default function About(){
                 </div>
 
                 {/* EDUCATION  */}
-                <div className="w-full md:w-1/3 mb-10 md:mb-0">
+                <div id="edu" className="w-full md:w-1/3 mb-10 md:mb-0">
                     <h2 className="mb-2 uppercase text-custom-sakura">Education</h2>
                     <div>
                         <h3>General Assembly</h3> 
@@ -108,38 +119,30 @@ export default function About(){
             </div>    
             
             {/* Chevron */}
-            <div className="mt-8 w-5/6">
-                <a href="#end">
-                    <FontAwesomeIcon className="w-6 mx-auto" icon={faChevronDown} />
-                </a>
-            </div>
+            <ScrollBtn target="#end" chevron={true}/>
         </div>
 
             {/* END */}
+            
             <div id="end" className="mt-64 mb-64 flex flex-col justify-center">
-            <div className="mb-4 border-2 rounded-lg w-5/6 md:w-1/2 text-center hover:border-custom-flamingo hover:bg-custom-flamingo flex justify-center self-center p-4">
-                <Link href="/portfolio">
-                    <a><h2 className="uppercase">View Portfolio</h2></a>
-                </Link>
-             </div>
-            <div className="mb-4 border-2 rounded-lg w-5/6 md:w-1/2 text-center hover:border-custom-flamingo hover:bg-custom-flamingo flex justify-center self-center p-4">
-                <Link href="/blog">
-                    <a><h2 className="uppercase">Read blog</h2></a>
-                </Link>
-             </div>
-            <div className="mb-24 border-2 rounded-lg w-5/6 md:w-1/2 text-center hover:border-custom-flamingo hover:bg-custom-flamingo flex justify-center self-center p-4">
-                <Link href="/contact">
-                    <a><h2 className="uppercase">Let's chat!</h2></a>
-                </Link>
-            </div>
 
-            <div className="mx-auto mt-8 w-5/6">       
-                <a href="#top">
-                    <FontAwesomeIcon className="w-6 mx-auto" icon={faChevronUp} />
-                </a>
-                <p className="text-center uppercase hover:bg-color-none hover:text-custom-flamingo">Back to top</p>
-            </div>
+                <div className="mb-4 border-2 rounded-lg w-5/6 md:w-1/2 text-center hover:border-custom-flamingo hover:bg-custom-flamingo flex justify-center self-center p-4">
+                    <Link href="/portfolio">
+                        <a><h2 className="uppercase">View Portfolio</h2></a>
+                    </Link>
+                </div>
+                <div className="mb-4 border-2 rounded-lg w-5/6 md:w-1/2 text-center hover:border-custom-flamingo hover:bg-custom-flamingo flex justify-center self-center p-4">
+                    <Link href="/blog">
+                        <a><h2 className="uppercase">Read blog</h2></a>
+                    </Link>
+                </div>
+                <div className="mb-24 border-2 rounded-lg w-5/6 md:w-1/2 text-center hover:border-custom-flamingo hover:bg-custom-flamingo flex justify-center self-center p-4">
+                    <Link href="/contact">
+                        <a><h2 className="uppercase">Let's chat!</h2></a>
+                    </Link>
+                </div>
 
+                <ScrollBtn target="#experience" chevron={false}/>
 
         </div>
 
