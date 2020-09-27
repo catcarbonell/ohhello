@@ -1,4 +1,4 @@
-import {useRef, useEffect} from 'react'
+import {useEffect} from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 import { gsap } from 'gsap/dist/gsap';
@@ -9,14 +9,13 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Blog = (props) => {
 
-
   useEffect(()=>{
     gsap.fromTo(".postbox", {
       autoAlpha: 0
     },{
       duration: 1,
       autoAlpha: 1,
-      ease: "power1.inOut",
+      ease: "power2.inOut",
       stagger: {
         grid: [3,15],
         from: "top left",

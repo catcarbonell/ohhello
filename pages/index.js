@@ -45,7 +45,7 @@ const Home = ()=> {
         duration:1,
         x: 0,
         autoAlpha:1,
-        ease: 'power1',
+        ease: 'power1.inOut',
         scrollTrigger: {
           id: `section-${index+1}`,
           trigger: el,
