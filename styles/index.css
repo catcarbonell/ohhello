@@ -65,6 +65,7 @@ h4 {
     font-family: 'Space Mono', monospace;
     text-transform: uppercase;
 }
+
 .bolded {
     font-weight: bold;
     color: #d09aff;
@@ -75,7 +76,7 @@ a:link, a:visited {
 }
 
 a:hover {
-    background-color:#ff68f9;
+    color:#ff68f9;
 }
 
 
@@ -169,16 +170,6 @@ a:hover {
 }
 
 
-@media only screen and (max-width: 600px) {
-    body {
-        background: url('../public/keyboardbg.jpg') no-repeat left top fixed;
-        -webkit-background-size: cover;
-        -moz-background-size:  cover;
-        -o-background-size: cover;
-        background-size:  cover;
-        background-attachment: fixed;
-          
-    }
-  }
+
 
 @tailwind utilities;

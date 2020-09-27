@@ -14,7 +14,7 @@ const Footer = () => {
                         <br />
                     </p>
                     <p className="mt-2">
-                    <Link href="/about"><a className="uppercase">Learn more &rarr;</a></Link>
+                    <Link href="/about"><a className="uppercase hover:text-custom-flamingo">Learn more &rarr;</a></Link>
                     </p>
                 </div>
                 <Socials />
@@ -24,25 +24,25 @@ const Footer = () => {
                 <h2 className="text-custom-lavender font-bold mb-2">Work with me</h2>
                 <p>Does your site need a UX review?</p>
                 <p>Do you need a front-end dev who can produce a usable UI for you at lightning speed?</p>
-                <Link href="/contact#calendly"><a className="mt-4 uppercase font-bold">Book your 30 min. intro call today!</a></Link>
+                <Link href="/contact#calendly"><a className="mt-4 uppercase font-bold hover:text-custom-flamingo">Book your 30 min. intro call today!</a></Link>
             </div>
 
                 <div className="w-5/6 md:w-1/6 flex flex-col md:mt-0 mt-10">
                     <h2 className="text-custom-lavender font-bold mb-2">Site Map</h2>
                     <Link href="/">
-                        <a className="mr-2 uppercase cursor-pointer">Home</a>
+                        <a className="mr-2 uppercase cursor-pointer hover:text-custom-flamingo">Home</a>
                     </Link>
                     <Link href="/blog">
-                        <a className="mr-2 cursor-pointer">Blog</a>
+                        <a className="mr-2 cursor-pointer hover:text-custom-flamingo">Blog</a>
                     </Link>
                     <Link href="/portfolio">
-                        <a className="mr-2 cursor-pointer">Portfolio</a>
+                        <a className="mr-2 cursor-pointer hover:text-custom-flamingo">Portfolio</a>
                     </Link>
                     <Link href="/about">
-                        <a className="mr-2 cursor-pointer">About</a>
+                        <a className="mr-2 cursor-pointer hover:text-custom-flamingo">About</a>
                     </Link>
-                    <Link href="/contact#calendly">
-                        <a className="mr-2 cursor-pointer">Contact</a>
+                    <Link href="/contact">
+                        <a className="mr-2 cursor-pointer hover:text-custom-flamingo">Contact</a>
                     </Link>
                 </div>
             </div>
