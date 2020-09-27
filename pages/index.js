@@ -39,9 +39,11 @@ const Home = ()=> {
     
     revealRefs.current.forEach((el, index)=>{
       gsap.fromTo(el, {
+        x:-1000,
         autoAlpha: 0,
       }, {
         duration:1,
+        x: 0,
         autoAlpha:1,
         ease: 'power1',
         scrollTrigger: {
@@ -67,7 +69,7 @@ const Home = ()=> {
         <title>cat | ui engineer &amp;&amp; ux designer</title>
         <link rel="icon" href="/ccfavicon.ico" />
       </Head>
-      <div ref={addToRefs} className="w-5/6 md:w-1/2 mx-auto mt-20 mb-64 md:w-5/6 flex flex-col place-items-center">
+      <div className="w-5/6 md:w-1/2 mx-auto mt-20 mb-64 md:w-5/6 flex flex-col place-items-center">
         
           <h1>Hello World!</h1>
           <figure id="logo" className="container w-1/2 md:w-1/4 mb-4 md:mb-10">

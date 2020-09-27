@@ -1,10 +1,30 @@
-
+import {useRef, useEffect} from 'react'
 import Head from 'next/head'
-import Link from 'next/link';
+import Link from 'next/link'
+import { gsap } from 'gsap/dist/gsap';
+import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 import DateComponent from '../../components/layout/DateComponent'
 import { getPosts } from '../api/posts';
+gsap.registerPlugin(ScrollTrigger);
 
 const Blog = (props) => {
+
+
+  useEffect(()=>{
+    gsap.fromTo(".postbox", {
+      autoAlpha: 0
+    },{
+      duration: 1,
+      autoAlpha: 1,
+      ease: "power1.inOut",
+      stagger: {
+        grid: [3,15],
+        from: "top left",
+        amount: 1.5
+      }
+    }) 
+  },[])
+
 
     return(
       <>
@@ -15,7 +35,7 @@ const Blog = (props) => {
         <div className="flex flex-row flex-wrap w-5/6 md:justify-start my-10 mx-auto">
 
           {props.posts.map(post => (
-            <Link key={post.id} href={`/blog/[slug]`} as={`/blog/${post.slug}`}><a>
+            <Link key={post.id} href={`/blog/[slug]`} as={`/blog/${post.slug}`}><a className="postbox">
               <div className="w-full md:max-w-sm md:mr-2 mb-8 lg:mb-2 shadow-lg">
                   <div className="absolute w-5/6 h-18 md:max-w-sm z-10 bg-custom-blk bg-opacity-85 hover:text-custom-pink hover:bg-opacity-100 p-4 shadow-lg">
                     <DateComponent dateString={post.published_at} />

@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-const Intro = (props,{ addToRefs }) =>{
+const Intro = (props) =>{
     
     return(
 
