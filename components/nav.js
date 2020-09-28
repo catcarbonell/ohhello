@@ -15,16 +15,19 @@ const Nav = () => {
 
     const toggleMenu = () => {
         setState(!state)
-        if(state === true){
+        const content = document.getElementsByTagName('body')[0]
+        if(state){
+            content.classList.add('overflow-hidden')
             gsap.to(moveMenu.current, {duration: 0.7, x: 1})
         } else {
+            content.classList.remove('overflow-hidden')
             gsap.to(moveMenu.current, {duration: 0.7, x: 1000})
         }
     };
      
 
     return(
-        <div className="fixed z-30 w-screen flex flex-row py-2 md:pt-2 justify-center items-center bg-custom-blk bg-opacity-50">
+        <div className="overflow-hidden fixed z-30 w-screen flex flex-row py-2 md:pt-2 justify-center items-center bg-custom-blk bg-opacity-50">
             
             <div className="flex items-center justify-start ml-4 w-1/2">
                 <Link href="/"><a>

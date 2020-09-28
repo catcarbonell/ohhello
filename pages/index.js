@@ -39,7 +39,7 @@ const Home = ()=> {
   revealRefs.current = []
 
   useEffect(()=>{
-    gsap.fromTo('#top-about', {autoAlpha:0}, {autoAlpha:1, duration:1})
+    gsap.fromTo('#top-about', {autoAlpha:0, x:-1000}, {autoAlpha:1, x:0,  duration:1})
     revealRefs.current.forEach((el, index)=>{
       gsap.fromTo(el, {
         x:-1000,

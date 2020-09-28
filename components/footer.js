@@ -30,19 +30,19 @@ const Footer = () => {
                 <div className="w-5/6 md:w-1/6 flex flex-col md:mt-0 mt-10">
                     <h2 className="text-custom-lavender font-bold mb-2">Site Map</h2>
                     <Link href="/">
-                        <a className="mr-2 uppercase cursor-pointer hover:text-custom-flamingo">Home</a>
+                        <a className="uppercase cursor-pointer hover:text-custom-flamingo">Home</a>
                     </Link>
                     <Link href="/blog">
-                        <a className="mr-2 cursor-pointer hover:text-custom-flamingo">Blog</a>
+                        <a className="cursor-pointer hover:text-custom-flamingo">Blog</a>
                     </Link>
                     <Link href="/portfolio">
-                        <a className="mr-2 cursor-pointer hover:text-custom-flamingo">Portfolio</a>
+                        <a className="cursor-pointer hover:text-custom-flamingo">Portfolio</a>
                     </Link>
                     <Link href="/about">
-                        <a className="mr-2 cursor-pointer hover:text-custom-flamingo">About</a>
+                        <a className="cursor-pointer hover:text-custom-flamingo">About</a>
                     </Link>
                     <Link href="/contact">
-                        <a className="mr-2 cursor-pointer hover:text-custom-flamingo">Contact</a>
+                        <a className="cursor-pointer hover:text-custom-flamingo">Contact</a>
                     </Link>
                 </div>
             </div>

@@ -32,7 +32,7 @@ const Blog = (props) => {
           <link rel="icon" href="/ccfavicon.ico" />
         </Head>
         <div className="mx-auto mb-4">
-          <h3 className="uppercase">Newest &rarr; Oldest</h3>
+          <h3 className="uppercase">&uarr; Newest &darr; Oldest</h3>
         </div>
         <div className="flex flex-row flex-wrap w-5/6 md:justify-start mb-24 mx-auto">
          

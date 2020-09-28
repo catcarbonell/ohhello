@@ -6,6 +6,8 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    -webkit-overflow-scrolling: touch;
+
   }
 
 body::before {
@@ -38,6 +40,7 @@ body {
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
     letter-spacing: 0.5px;
+    -webkit-overflow-scrolling: touch;
 }
 
 h1 {
@@ -85,7 +88,7 @@ a:hover {
 /* ======================= */
 
 #menu {
-    height: 100vh;   
+    height: 100vh;
 }
 #menu a:link, #menu a:visited {
     color:#ffccfd;
