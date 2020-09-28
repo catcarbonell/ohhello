@@ -21,6 +21,7 @@ export default function ScrollBtn(props){
                 ? <FontAwesomeIcon className="w-6 mx-auto" icon={faChevronDown} /> 
                 : <FontAwesomeIcon className="w-6 mx-auto" icon={faChevronUp} />
             }  
+            <p className="text-center uppercase">{props.text}</p>
         </div>
     )
 }

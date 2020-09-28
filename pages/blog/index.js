@@ -31,8 +31,11 @@ const Blog = (props) => {
           <title>blog | catcarbn.com</title>
           <link rel="icon" href="/ccfavicon.ico" />
         </Head>
-        <div className="flex flex-row flex-wrap w-5/6 md:justify-start my-10 mx-auto">
-
+        <div className="mx-auto mb-4">
+          <h3 className="uppercase">Newest &rarr; Oldest</h3>
+        </div>
+        <div className="flex flex-row flex-wrap w-5/6 md:justify-start mb-24 mx-auto">
+         
           {props.posts.map(post => (
             <Link key={post.id} href={`/blog/[slug]`} as={`/blog/${post.slug}`}><a className="postbox w-auto">
               <div className="w-full md:max-w-sm md:mr-2 mb-8 lg:mb-2 shadow-lg">
