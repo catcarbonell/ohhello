@@ -84,7 +84,7 @@ const Home = ()=> {
               </div>
               
               {/* TEXT */}
-              <div  className="w-full md:w-1/2 md:text-lg flex flex-col items-center justify-center">
+              <div className="w-full md:w-1/2 md:text-lg flex flex-col items-center justify-center">
                   <p>
                       I'm a <span className="font-bold text-custom-lavender">UI engineer</span> and <span className="font-bold text-custom-lavender">UX designer</span> with a penchant for problem solving and 
                       all things aesthetic! 
