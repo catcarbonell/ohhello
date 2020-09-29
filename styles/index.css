@@ -6,7 +6,6 @@ body {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    -webkit-overflow-scrolling: touch;
 
   }
 
@@ -40,7 +39,6 @@ body {
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
     letter-spacing: 0.5px;
-    -webkit-overflow-scrolling: touch;
 }
 
 h1 {
