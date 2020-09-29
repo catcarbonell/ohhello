@@ -18,7 +18,7 @@ const Nav = () => {
         const content = document.getElementsByTagName('body')[0]
         if(state){
             content.classList.add('overflow-hidden')
-            gsap.to(moveMenu.current, {duration: 0.7, x: 1})
+            gsap.to(moveMenu.current, {duration: 0.7, x: 0})
         } else {
             content.classList.remove('overflow-hidden')
             gsap.to(moveMenu.current, {duration: 0.7, x: 1000})
