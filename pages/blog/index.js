@@ -9,7 +9,6 @@ gsap.registerPlugin(ScrollTrigger);
 
 const Blog = (props) => {
 
-
   useEffect(()=>{
     gsap.fromTo('.postbox', {
       x: -1000,

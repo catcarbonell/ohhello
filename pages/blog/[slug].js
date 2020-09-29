@@ -1,16 +1,17 @@
-import {useEffect} from 'react'
+import { useEffect } from 'react'
 import Prism from 'prismjs'
 import "prismjs/components/prism-jsx.min";
 import Head from 'next/head'
 import Link from 'next/link'
 import { gsap } from 'gsap/dist/gsap';
-import { getSinglePost } from '../api/posts';
+import { getSinglePost } from '../api/posts'
+import { Twitter, Facebook, Linkedin } from 'react-social-sharing'
 import DateComponent from '../../components/layout/DateComponent'
 import ScrollBtn from '../../components/layout/scrollBtn'
 
 
 const PostPage = (props) => {
-    
+    const myUrl = `https://catvsco.de/blog/${props.post.slug}`
     useEffect(() => {
         gsap.fromTo('.postbody', {autoAlpha:0, x: 1000}, {autoAlpha:1, x:0, duration:1, stagger: 0.7})
         Prism.highlightAll();
@@ -23,13 +24,17 @@ const PostPage = (props) => {
                 <title>{props.post.title} | catcarbn.com</title>
                 <link rel="icon" href="/ccfavicon.ico" />
             </Head>
-            <div id="top" className="ml-8 md:ml-10 mb-4">
-            <Link href="/blog"><a className="uppercase font-bold  hover:text-custom-sakura">&larr; Back to Blog Archive</a></Link>            
+           
+            <div className="flex justify-start w-full md:w-1/2">
+                <Link href="/blog">
+                    <a className="uppercase font-bold  hover:text-custom-sakura">&larr; Back to Blog Archive</a>
+                </Link>            
             </div>
-
+            
             <div className="postbody overflow-hidden w-screen md:min-h-sm md:max-h-sm opacity-95 mx-auto">
                 <img className="object-cover w-screen m-0 p-0" src={props.post.feature_image} alt={props.post.title} />
             </div>
+         
 
             <div className="postbody post-style w-full px-6 md:w-5/6 bg-custom-shadow md:-mt-10 bg-opacity-50 md:px-10 flex flex-col justify-center self-center">
                 <div className="text-center mt-20 md:mt-40 md:mb-20">
@@ -42,9 +47,28 @@ const PostPage = (props) => {
                 {/* POST CONTENT */}
                 <div className="postbody w-xs md:w-4/6 mx-auto pb-64" 
                     dangerouslySetInnerHTML={{ __html: props.post.html }} />
-                </div>
 
-                <ScrollBtn target="#top" chevron={false} />
+                    <div className="w-5/6 text-xs px-2 mb-10 md:w-1/2 flex flex-col justify-center mx-auto">
+                        <h3>Share this post!</h3>
+                        <div className="flex flex-row justify-center uppercase">
+                            <Twitter link={myUrl} />
+                            <Facebook link={myUrl} />
+                            <Linkedin link={myUrl} />
+                            
+                        </div>
+                    </div>
+
+                    <div className="text-center mb-64">
+                        <Link href="/blog">
+                            <a className="uppercase font-bold  hover:text-custom-sakura">&larr; Back to Blog Archive</a>
+                        </Link>            
+                    </div>
+
+                    <ScrollBtn target="#top" chevron={false} text="top" />
+                </div>
+                
+                
+                
         </>
     )
 }
