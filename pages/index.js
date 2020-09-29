@@ -1,8 +1,8 @@
 import {useEffect, useRef} from 'react'
 import { gsap } from 'gsap/dist/gsap';
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
-import Head from 'next/head'
 import Link from 'next/link'
+import Meta from '../components/meta'
 import Intro from '../components/intro'
 import ScrollBtn from '../components/layout/scrollBtn'
 gsap.registerPlugin(ScrollTrigger);
@@ -68,11 +68,7 @@ const Home = ()=> {
 
   return (
     <>
-      <Head>
-        <title>cat | ui engineer &amp;&amp; ux designer</title>
-        <link rel="icon" href="/ccfavicon.ico" />
-      </Head>
-  
+      <Meta title="cat" />
       <div id="top" className="w-5/6 md:w-1/2 mx-auto mb-64 md:w-5/6 flex flex-col place-items-center">
 
         <div id="top-about" className="mb-20 md:mb-64 mx-auto flex flex-col justify-center content-center self-center">  
