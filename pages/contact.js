@@ -1,8 +1,8 @@
 import { useEffect } from 'react'
-import Head from 'next/head'
 import { gsap } from 'gsap/dist/gsap';
 import {InlineWidget} from 'react-calendly'
 import Socials from '../components/layout/Socials'
+import Meta from '../../components/meta'
 
 export default function Contact(){
     useEffect(()=>{
@@ -10,10 +10,7 @@ export default function Contact(){
     }, [])
     return(
         <>
-            <Head>
-                <title> contact | catcarbn.com </title>
-                <link rel="icon" href="/ccfavicon.ico" />
-            </Head>
+            <Meta title="contact" />
 
             <div className="mx-auto w-5/6 md:w-full">
                 

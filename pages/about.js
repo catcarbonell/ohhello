@@ -8,6 +8,7 @@ import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons'
 import { faHtml5, faJsSquare, faReact, faSass, faCss3Alt } from '@fortawesome/free-brands-svg-icons'
 import StackItem from '../components/layout/stackItem'
 import ScrollBtn from '../components/layout/scrollBtn'
+import Meta from '../../components/meta'
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -20,10 +21,7 @@ export default function About(){
 
     return(
         <>
-            <Head>
-                <title> about | catcarbn.com </title>
-                <link rel="icon" href="/ccfavicon.ico" />
-            </Head>
+           <Meta title="about" />
 
 
             {/* SKILLS/EXPERIENCE  */}

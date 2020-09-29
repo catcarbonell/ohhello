@@ -4,7 +4,9 @@ import Link from 'next/link'
 import { gsap } from 'gsap/dist/gsap';
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 import DateComponent from '../../components/layout/DateComponent'
-import { getPosts } from '../api/posts';
+import { getPosts } from '../api/posts'
+import Meta from '../../components/meta'
+
 gsap.registerPlugin(ScrollTrigger);
 
 const Blog = (props) => {
@@ -23,10 +25,7 @@ const Blog = (props) => {
 
     return(
       <>
-        <Head>
-          <title>blog | catcarbn.com</title>
-          <link rel="icon" href="/ccfavicon.ico" />
-        </Head>
+        <Meta title="blog" />
  
         <div className="flex flex-row flex-wrap w-5/6 md:justify-start mb-24 mx-auto">
           {props.posts.map(post => (

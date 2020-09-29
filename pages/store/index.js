@@ -1,12 +1,9 @@
-import Head from 'next/head'
+import Meta from '../../components/meta'
 
 const Store = () => {
     return(
         <>
-             <Head>
-                <title>cat | ui engineer &amp;&amp; illustrator</title>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
+             <Meta title="store" />
             <h2>Store.</h2>
         </>   
     )

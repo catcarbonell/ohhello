@@ -1,14 +1,13 @@
 import { useEffect } from 'react'
 import Prism from 'prismjs'
 import "prismjs/components/prism-jsx.min";
-import Head from 'next/head'
 import Link from 'next/link'
 import { gsap } from 'gsap/dist/gsap';
 import { getSinglePost } from '../api/posts'
 import { Twitter, Facebook, Linkedin } from 'react-social-sharing'
 import DateComponent from '../../components/layout/DateComponent'
 import ScrollBtn from '../../components/layout/scrollBtn'
-
+import Meta from '../../components/meta'
 
 const PostPage = (props) => {
     const myUrl = `https://catvsco.de/blog/${props.post.slug}`
@@ -20,10 +19,7 @@ const PostPage = (props) => {
 
     return (
         <>
-            <Head>
-                <title>{props.post.title} | catcarbn.com</title>
-                <link rel="icon" href="/ccfavicon.ico" />
-            </Head>
+            <Meta title={props.post.title} />
            
             <div id="top" className="flex justify-start w-full md:w-1/2 mb-4 ml-8">
                 <Link href="/blog">

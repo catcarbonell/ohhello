@@ -1,8 +1,8 @@
 import {useEffect, useRef} from 'react'
-import Head from 'next/head'
 import { gsap } from 'gsap/dist/gsap'
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 import Project from '../components/project'
+import Meta from '../../components/meta'
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -40,10 +40,7 @@ const Portfolio = () => {
   
     return(
         <>
-            <Head>
-                <title> portfolio | catcarbn.com </title>
-                <link rel="icon" href="/ccfavicon.ico" />
-            </Head>
+           <Meta title="portfolio" />
 
             <div className="w-full pl-0 md:w-4/6 md:mx-auto mb-64 flex flex-col md:flex-wrap md:flex-row justify-start items-start">
                 <div ref={addToRefs} className="w-full">
