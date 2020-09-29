@@ -25,9 +25,9 @@ const PostPage = (props) => {
                 <link rel="icon" href="/ccfavicon.ico" />
             </Head>
            
-            <div className="flex justify-start w-full md:w-1/2">
+            <div id="top" className="flex justify-start w-full md:w-1/2 mb-4 ml-8">
                 <Link href="/blog">
-                    <a className="uppercase font-bold  hover:text-custom-sakura">&larr; Back to Blog Archive</a>
+                    <a className="uppercase font-bold hover:text-custom-sakura">&larr; Back to Blog Archive</a>
                 </Link>            
             </div>
             
@@ -45,11 +45,11 @@ const PostPage = (props) => {
                 </div>
                
                 {/* POST CONTENT */}
-                <div className="postbody w-xs md:w-4/6 mx-auto pb-64" 
+                <div className="postbody w-xs md:w-4/6 mx-auto pb-20" 
                     dangerouslySetInnerHTML={{ __html: props.post.html }} />
-
+                    
                     <div className="w-5/6 text-xs px-2 mb-10 md:w-1/2 flex flex-col justify-center mx-auto">
-                        <h3>Share this post!</h3>
+                        <h3>Please share this post!</h3>
                         <div className="flex flex-row justify-center uppercase">
                             <Twitter link={myUrl} />
                             <Facebook link={myUrl} />
@@ -58,7 +58,7 @@ const PostPage = (props) => {
                         </div>
                     </div>
 
-                    <div className="text-center mb-64">
+                    <div className="text-center mb-20">
                         <Link href="/blog">
                             <a className="uppercase font-bold  hover:text-custom-sakura">&larr; Back to Blog Archive</a>
                         </Link>            
