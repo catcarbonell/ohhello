@@ -2,7 +2,7 @@ import {useEffect, useRef} from 'react'
 import { gsap } from 'gsap/dist/gsap'
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 import Project from '../components/project'
-import Meta from '../../components/meta'
+import Meta from '../components/meta'
 gsap.registerPlugin(ScrollTrigger);
 
 

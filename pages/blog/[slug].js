@@ -24,8 +24,8 @@ const PostPage = (props) => {
 
                 <meta name="twitter:card" content="summary" key="twcard" />
                 <meta name="twitter:creator" content="@catvscode" key="twhandle" />
-                <meta property='twitter:title' content={props.post.title} />
-                <meta property='twitter:image' content={myUrl} />
+                <meta property="twitter:title" content={props.post.title} />
+                <meta property="twitter:image" content={myUrl} />
                 <meta name="twitter:card" content={props.post.feature_image} />
 
                 

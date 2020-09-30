@@ -2,7 +2,7 @@ import { useEffect } from 'react'
 import { gsap } from 'gsap/dist/gsap';
 import {InlineWidget} from 'react-calendly'
 import Socials from '../components/layout/Socials'
-import Meta from '../../components/meta'
+import Meta from '../components/meta'
 
 export default function Contact(){
     useEffect(()=>{

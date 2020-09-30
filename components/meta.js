@@ -1,5 +1,5 @@
 import Head from 'next/head'
-export default function Meta(props) {
+const  Meta = (props) => {
     return(
         <Head>            
 
@@ -24,3 +24,4 @@ export default function Meta(props) {
         </Head>
     )
 }
+export default Meta
