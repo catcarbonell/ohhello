@@ -15,17 +15,17 @@ const Home = ()=> {
       img: '/portfolio/ustoyou.png',
       link: '/portfolio'
     },
+    { linkey: 'blog',
+    title : 'Dev Blog',
+    description: 'I wrote these. Read \'em',
+    img: '/blog.jpg',
+    link: '/blog'
+    },
     { linkey: 'about',
       title : 'About',
       description: 'Learn more about me!',
       img: '/kitty.jpg',
       link: '/about'
-    },
-    { linkey: 'blog',
-      title : 'Dev Blog',
-      description: 'I wrote these. Read \'em',
-      img: '/blog.jpg',
-      link: '/blog'
     },
     { linkey: 'contact',
       title : 'Contact',
