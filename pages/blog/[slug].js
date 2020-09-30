@@ -1,13 +1,14 @@
 import { useEffect } from 'react'
 import Prism from 'prismjs'
-import "prismjs/components/prism-jsx.min";
+import "prismjs/components/prism-jsx.min"
+import Head from 'next/head'
 import Link from 'next/link'
 import { gsap } from 'gsap/dist/gsap';
 import { getSinglePost } from '../api/posts'
 import { Twitter, Facebook, Linkedin } from 'react-social-sharing'
 import DateComponent from '../../components/layout/DateComponent'
 import ScrollBtn from '../../components/layout/scrollBtn'
-import Meta from '../../components/meta'
+
 
 const PostPage = (props) => {
     const myUrl = `https://catvsco.de/blog/${props.post.slug}`
@@ -19,7 +20,26 @@ const PostPage = (props) => {
 
     return (
         <>
-            <Meta title={props.post.title} />
+            <Head>
+
+                <meta name="twitter:card" content="summary" key="twcard" />
+                <meta name="twitter:creator" content="@catvscode" key="twhandle" />
+                
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+                <meta charSet="utf-8" />
+                
+                <meta property="description" content={props.post.excerpt} />
+                
+                <meta property="og:site_name" content="Cat Carbonell: User Interface and Experience Engineer" key="ogsitename" />
+                <meta property="og:title" key="ogtitle" content={props.post.title} />
+                <meta property="og:url" key="ogurl" content={myUrl} />
+                <meta property="og:image" key="ogimage" content={props.post.feature_image} />
+                <meta property="og:description" key="ogdescription" content={props.post.excerpt} />
+            
+                <title>{props.title} | ui engineer &amp;&amp; ux designer</title>
+                <link rel="icon" href="/ccfavicon.ico" />
+
+            </Head>
            
             <div id="top" className="flex justify-start w-full md:w-1/2 mb-4 ml-8">
                 <Link href="/blog">
