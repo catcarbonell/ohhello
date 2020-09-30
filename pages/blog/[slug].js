@@ -57,7 +57,7 @@ const PostPage = (props) => {
             </div>
          
 
-            <div className="postbody post-style w-full px-6 md:w-5/6 bg-custom-shadow md:-mt-10 bg-opacity-50 md:px-10 flex flex-col justify-center self-center">
+            <div className="postbody post-style w-full px-6 md:w-5/6 bg-custom-shadow md:mt-20 bg-opacity-50 md:px-10 flex flex-col justify-center self-center">
                 <div className="text-center mt-20 md:mt-40 md:mb-20">
                     <h1 className="font-bold text-custom-sakura text-2xl md:text-4xl">{props.post.title}</h1>
                     <div className="w-full md:w-1/3 mx-auto">

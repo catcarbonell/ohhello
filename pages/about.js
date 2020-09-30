@@ -1,5 +1,4 @@
 import {useEffect} from 'react'
-import Head from 'next/head'
 import Link from 'next/link'
 import { gsap } from 'gsap/dist/gsap';
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
