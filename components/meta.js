@@ -2,7 +2,7 @@ import Head from 'next/head'
 const  Meta = (props) => {
     return(
         <Head>            
-
+            
             <meta name="twitter:card" content="summary" key="twcard" />
             <meta name="twitter:creator" content="@catvscode" key="twhandle" />
             
@@ -19,6 +19,8 @@ const  Meta = (props) => {
         
             <title>{props.title} | ui engineer &amp;&amp; ux designer</title>
             <link rel="icon" href="/ccfavicon.ico" />
+            <link rel="webmention" href="https://webmention.io/catvsco.de/webmention" />
+            <link rel="pingback" href="https://webmention.io/catvsco.de/xmlrpc" />
         
            
         </Head>

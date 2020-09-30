@@ -41,8 +41,10 @@ const PostPage = (props) => {
                 <meta property="og:image:width" content="300" />
                 <meta property="og:description" key="ogdescription" content={props.post.excerpt} />
             
-                <title>{props.title} | ui engineer &amp;&amp; ux designer</title>
+                <title>{props.post.title} | ui engineer &amp;&amp; ux designer</title>
                 <link rel="icon" href="/ccfavicon.ico" />
+                <link rel="webmention" href="https://webmention.io/catvsco.de/webmention" />
+                <link rel="pingback" href="https://webmention.io/catvsco.de/xmlrpc" />
 
             </Head>
            
