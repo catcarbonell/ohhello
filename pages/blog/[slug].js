@@ -25,7 +25,8 @@ const PostPage = (props) => {
                 <meta name="twitter:card" content="summary" key="twcard" />
                 <meta name="twitter:creator" content="@catvscode" key="twhandle" />
                 <meta property="twitter:title" content={props.post.title} />
-                <meta property="twitter:image" content={props.post.feature_image} />
+                <meta property="twitter:image:width" content="300" />
+                <meta property="twitter:image"  content={props.post.feature_image} />
 
                 
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -37,6 +38,7 @@ const PostPage = (props) => {
                 <meta property="og:title" key="ogtitle" content={props.post.title} />
                 <meta property="og:url" key="ogurl" content={myUrl} />
                 <meta property="og:image" key="ogimage" content={props.post.feature_image} />
+                <meta property="og:image:width" content="300" />
                 <meta property="og:description" key="ogdescription" content={props.post.excerpt} />
             
                 <title>{props.title} | ui engineer &amp;&amp; ux designer</title>
