@@ -1,8 +1,9 @@
 import { useEffect } from 'react'
-import { gsap } from 'gsap/dist/gsap';
+import { gsap } from 'gsap/dist/gsap'
 import {InlineWidget} from 'react-calendly'
 import Socials from '../components/layout/Socials'
 import Meta from '../components/meta'
+import EmailForm from '../components/emailForm'
 
 export default function Contact(){
     useEffect(()=>{
@@ -21,7 +22,7 @@ export default function Contact(){
 
                 <div className="contact-section text-xl mb-24">
                     <h2 className="mb-4 text-custom-lavender">Email me!</h2>
-                    <p>&rarr; hello (at) catcarbn.com</p>
+                    <EmailForm />
                 </div>
 
                 <div id="calendly" className="contact-section text-lg mb-24">
@@ -29,7 +30,7 @@ export default function Contact(){
                     <h2 className="text-custom-lavender">Book a <span className="uppercase">free</span> 30 min. intro call!</h2>
                     <p className="mb-10">...or book a 1 or 2 hour consultation <span className="font-bold">right now! &darr;</span></p>
 
-                    <InlineWidget
+                   <InlineWidget
                         pageSettings={{
                             backgroundColor: '21183c' ,
                             hideEventTypeDetails: false,
@@ -66,7 +67,7 @@ export default function Contact(){
                             utmSource: 'Facebook',
                             utmTerm: 'Spring'
                         }}
-                        />
+                        /> 
                     </div>
                
             </div>
