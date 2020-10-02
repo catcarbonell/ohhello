@@ -41,36 +41,36 @@ export default function EmailForm(){
                 <div className="mb-2">
                     <input type="hidden" name="contact_number" />
                     
-                    <label className="uppercase text-xs">Name</label>
+                    <label for="from_name" className="uppercase text-xs">Name</label>
                     <br />
                     <input 
                         className="text-custom-flamingo rounded text-sm p-2 font-mono"  
                         placeholder="ex. Chun Li" 
                         type="text" 
-                        name="user_name"
+                        name="from_name"
                         value={userName}
                         onChange={ e => setUserName(e.target.value)} />
                 </div>
                 
                 <div className="mb-2">
-                    <label className="uppercase text-xs">Email</label>
+                    <label for="from_email" className="uppercase text-xs">Email</label>
                     <br />
                     <input 
                         placeholder="ex. chunners@capcom.com" 
                         className="text-custom-flamingo rounded text-sm p-2 font-mono" 
                         type="email" 
-                        name="user_email" 
+                        name="from_email" 
                         value={userEmail}
                         onChange={ e => setUserEmail(e.target.value)}
                         />
                 </div>
                 
                 <div className="mb-2">
-                    <label className="uppercase text-xs">Message</label>
+                    <label for="message_html" className="uppercase text-xs">Message</label>
                     <br />
                     <textarea 
                         className="text-custom-flamingo rounded text-sm p-2 font-mono" 
-                        name="message"
+                        name="message_html"
                         value={message}
                         onChange={ e => setMessage(e.target.value)} />
                 </div>
