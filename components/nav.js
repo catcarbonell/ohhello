@@ -51,7 +51,6 @@ const Nav = () => {
                     </div>
                     <div className="mr-2">
                         <Link href="/Home" as="/"><a onClick={toggleMenu}><NavItem text="Home" /></a></Link>
-                        <Link href="/blog"><a onClick={toggleMenu}><NavItem text="Blog" /></a></Link>
                         <Link href="/portfolio"><a onClick={toggleMenu}><NavItem text="Portfolio" /></a></Link>
                         <Link href="/about"><a onClick={toggleMenu}><NavItem text="About" /></a></Link>
                         <Link href="/contact"><a onClick={toggleMenu}><NavItem text="Contact" /></a></Link>
