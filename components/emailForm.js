@@ -36,7 +36,7 @@ export default function EmailForm(){
     }
     
     return (
-        <div className="max-w-md flex flex-col">
+        <div className="w-1/2 flex flex-col">
             <form onSubmit={handleSubmit}>
                 <div className="mb-2">
                     <input type="hidden" name="contact_number" />
