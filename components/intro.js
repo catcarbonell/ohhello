@@ -7,7 +7,7 @@ const Intro = () =>{
       
         <div className="p-6 flex flex-col justify-center align-center">
             <h1 className="text-custom-sakura hover:text-custom-flamingo">Cat Carbonell</h1>
-            <h4> UX/Visual Designer &amp; Engineer </h4>
+            <h4> UX/UI Designer &amp; Engineer </h4>
          </div>
       </div>
 
