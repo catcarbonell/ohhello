@@ -43,7 +43,8 @@ body {
 
 h1 {
     color: #ccb8fc;
-    font-size:1.5rem;
+    font-size: 2rem;
+    font-weight: 900;
     font-family: 'Nunito', monospace;
 }
 
