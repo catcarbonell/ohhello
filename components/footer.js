@@ -14,8 +14,7 @@ const Footer = () => {
                     <div className="mb-6">
                         <h2 className="text-custom-lavender mb-2">Cat Carbonell</h2>
                         <p className="md:w-3/4">
-                            UX Engineer, graphic designer, writer, and <a href="https://catoutoftheba.gg" target="new">podcast host</a> all bundled up in a 
-                            petite frame, draped in oversized sweaters.
+                            UX Designer and Front-end engineer wrapped up in oversized sweaters.
                             <br />
                         </p>
                     </div>
