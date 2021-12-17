@@ -12,7 +12,7 @@ const Footer = () => {
             <div className="flex flex-col justify-evenly md:flex-row">
                 <div className="w-3/4 md:mr-6 md:mt-0 mt-10">
                     <div className="mb-6">
-                        <h2 className="text-custom-lavender mb-2">Cat Carbonell</h2>
+                        <h2 className="text-custom-lavender mb-2">Cat Ballar</h2>
                         <p className="md:w-3/4">
                             UX Designer and Front-end engineer wrapped up in oversized sweaters.
                             <br />
