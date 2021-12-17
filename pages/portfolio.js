@@ -52,6 +52,7 @@ const Portfolio = () => {
                         stack="HTML5, CSS3, JS"
                         github="https://github.com/catcarbonell/killerkao"
                         demo="https://catcarbonell.github.io/killerkao"
+                        case="https://dev.to/cat/ux-case-study-killer-kao-h98"
                     />
                 </div>
                 
@@ -76,6 +77,7 @@ const Portfolio = () => {
                         stack="React, TailwindCSS, Django"
                         github="https://github.com/RoblesAarik/hackathon_frontend"
                         demo="https://hackathon-frontend-v01.vercel.app/"
+                        case="https://dev.to/cat/my-first-hackathon-as-a-developer-3o45"
                     />
                 </div>
             </div>

@@ -32,9 +32,15 @@ export default function Project(props){
                     <div className="shadow-lg mr-2 px-4 py-2 border-2 rounded-lg uppercase hover:bg-custom-flamingo">
                         <a href={props.github} target="new">Github</a>
                     </div>
-                    <div className="shadow-lg px-4 py-2 border-2 rounded-lg uppercase hover:bg-custom-flamingo">
+                    <div className="shadow-lg mr-2 px-4 py-2 border-2 rounded-lg uppercase hover:bg-custom-flamingo">
                         <a href={props.demo} target="new">Live Demo</a>
                     </div>
+                    {props.case &&
+                         <div className="shadow-lg px-4 py-2 border-2 rounded-lg uppercase hover:bg-custom-flamingo">
+                            <a href={props.case} target="new">Case Study</a>
+                        </div>
+                    }
+                   
                 </div>
             </div>
         </div>
