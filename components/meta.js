@@ -9,13 +9,13 @@ const  Meta = (props) => {
             <meta name="viewport" content="width=device-width, initial-scale=1" />
             <meta charSet="utf-8" />
             
-            <meta property="description" content="The portfolio and blog of Cat Carbonell: a User Interface and Experience Engineer." />
+            <meta property="description" content="The portfolio of Cat Ballar: a User Interface and Experience Engineer." />
             
-            <meta property="og:site_name" content="Cat Carbonell: User Interface and Experience Engineer" key="ogsitename" />
-            <meta property="og:title" key="ogtitle" content="Cat Carbonell: UI Engineer and UX Designer" />
+            <meta property="og:site_name" content="Cat Ballar: User Interface and Experience Engineer" key="ogsitename" />
+            <meta property="og:title" key="ogtitle" content="Cat Ballar: UI Engineer and UX Designer" />
             <meta property="og:url" key="ogurl" content="https://catvsco.de/" />
             <meta property="og:image" key="ogimage" content="https://catvsco.de/kitty.jpg" />
-            <meta property="og:description" key="ogdescription" content="The portfolio and blog of Cat Carbonell: a User Interface and Experience Engineer." />
+            <meta property="og:description" key="ogdescription" content="The portfolio of Cat Ballar: a User Interface and Experience Engineer." />
         
             <title>{props.title} | ui engineer &amp;&amp; ux designer</title>
             <link rel="icon" href="/ccfavicon.ico" />
