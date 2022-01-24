@@ -43,18 +43,6 @@ const Portfolio = () => {
            <Meta title="portfolio" />
 
             <div className="w-full pl-0 md:w-4/6 md:mx-auto mb-64 flex flex-col md:flex-wrap md:flex-row justify-start items-start">
-                <div ref={addToRefs} className="w-full">
-                    <Project 
-                        title="Killer Kao"
-                        description="A vanilla JS-based web app game utilizing a basic rock-paper-scissors engine."
-                        img="/portfolio/killerkao.png"
-                        role="Creator"
-                        stack="HTML5, CSS3, JS"
-                        github="https://github.com/catcarbonell/killerkao"
-                        demo="https://catcarbonell.github.io/killerkao"
-                        case="https://dev.to/cat/ux-case-study-killer-kao-h98"
-                    />
-                </div>
                 
                 <div ref={addToRefs} className="w-full">
                     <Project 
@@ -65,6 +53,19 @@ const Portfolio = () => {
                         stack="HTML5, CSS3, JS"
                         github="https://github.com/catcarbonell/popop"
                         demo="https://catcarbonell.github.io/popop"
+                    />
+                </div>
+                
+                <div ref={addToRefs} className="w-full">
+                    <Project 
+                        title="Killer Kao"
+                        description="A vanilla JS-based web app game utilizing a basic rock-paper-scissors engine."
+                        img="/portfolio/killerkao.png"
+                        role="Creator"
+                        stack="HTML5, CSS3, JS"
+                        github="https://github.com/catcarbonell/killerkao"
+                        demo="https://catcarbonell.github.io/killerkao"
+                        case="https://dev.to/cat/ux-case-study-killer-kao-h98"
                     />
                 </div>
 
