@@ -26,7 +26,8 @@
     "react": "^16.13.1",
     "react-calendly": "^1.1.1",
     "react-dom": "^16.13.1",
-    "react-social-sharing": "^3.3.0"
+    "react-social-sharing": "^3.3.0",
+    "tw-elements": "^1.0.0-alpha9"
   },
   "devDependencies": {
     "@babel/plugin-transform-react-jsx": "^7.10.4",

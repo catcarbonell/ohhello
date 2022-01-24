@@ -14,8 +14,11 @@ const Socials = () => {
         <a className="mr-2 w-6 hover:text-custom-flamingo" rel="me" href="https://twitter.com/catcarbn" target="new">
             <FontAwesomeIcon icon={faTwitter}/>
         </a>
-        <a className="w-6 hover:text-custom-flamingo" href="https://github.com/catcarbonell" target="new">
+        <a className="mr-2 w-6 hover:text-custom-flamingo" href="https://github.com/catcarbonell" target="new">
             <FontAwesomeIcon icon={faGithub} />
+        </a>
+        <a className="w-6 hover:text-custom-flamingo" href="https://linkedin.com/in/catcarbonell" target="new">
+            <FontAwesomeIcon icon={faLinkedin} />
         </a>
     </div>
     )
