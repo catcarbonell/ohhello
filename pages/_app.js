@@ -1,5 +1,6 @@
 import '../styles/index.css'
-import "../styles/prism-synthwave84.css";
+import "../styles/prism-synthwave84.css"
+import "react-responsive-carousel/lib/styles/carousel.min.css"
 import Nav from '../components/nav'
 import Footer from '../components/footer'
 

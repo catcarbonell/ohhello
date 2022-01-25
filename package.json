@@ -26,6 +26,7 @@
     "react": "^16.13.1",
     "react-calendly": "^1.1.1",
     "react-dom": "^16.13.1",
+    "react-responsive-carousel": "^3.2.22",
     "react-social-sharing": "^3.3.0",
     "tw-elements": "^1.0.0-alpha9"
   },

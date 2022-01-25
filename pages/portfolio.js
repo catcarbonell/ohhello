@@ -36,8 +36,7 @@ const Portfolio = () => {
         revealRefs.current.push(el)
       }
     }
-   
-  
+
     return(
         <>
            <Meta title="portfolio" />
@@ -55,7 +54,7 @@ const Portfolio = () => {
                         demo="https://catcarbonell.github.io/popop"
                     />
                 </div>
-                
+
                 <div ref={addToRefs} className="w-full">
                     <Project 
                         title="Killer Kao"
