@@ -35,7 +35,7 @@ export default function About(){
                     <StackItem text="JavaScript" color="#f6e995" icon={faJsSquare} />
                     <StackItem text="React" color="#a0e9fc" icon={faReact} />
                     <StackItem text="Sass/SCSS" color="#d785ad" icon={faSass} />
-                    <Link href="/portfolio"><a className="uppercase font-bold hover:text-custom-flamingo">View Portfolio</a></Link>
+                    <Link href="/"><a className="uppercase font-bold hover:text-custom-flamingo">View Portfolio</a></Link>
                     <div className="md:hidden">
                         <ScrollBtn target="#exp" chevron={true} />
                     </div>
@@ -48,10 +48,14 @@ export default function About(){
                         <ScrollBtn target="#stack" chevron={false} />
                     </div>
                     <h2 className="mb-2 uppercase text-custom-sakura">Experience</h2>
-                    <div>
-                        <h3>Open Water Accelerator</h3> 
-                        <p>Frontend Engineering Intern</p>
-                        <p className="mt-2">Aug 2020 - current</p>
+                    <div className="mt-4">
+                        <h3>
+                            Miscreants
+                        </h3> 
+                        <p>
+                            Frontend Engineer and Product Design Intern
+                        </p>
+                        <p className="mt-2">Nov 2021 - current</p>
                     </div>
                     <div className="mt-4">
                         <h3>
@@ -60,7 +64,12 @@ export default function About(){
                         <p>
                             Frontend Engineer and UX Designer
                         </p>
-                        <p className="mt-2">Jan 2013 - current</p>
+                        <p className="mt-2">Aug 2016 - Nov 2021</p>
+                    </div>
+                    <div className="mt-4">
+                        <h3>Open Water Accelerator</h3> 
+                        <p>Frontend Engineering Intern</p>
+                        <p className="mt-2">Aug 2020 - Dec 2020</p>
                     </div>
                     <div className="mt-4">
                         <h3>Facebook</h3> 

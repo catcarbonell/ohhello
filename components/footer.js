@@ -14,7 +14,15 @@ const Footer = () => {
                     <div className="mb-6">
                         <h2 className="text-custom-lavender mb-2">Cat Ballar</h2>
                         <p className="md:w-3/4">
-                            UX Designer and Front-end engineer wrapped up in oversized sweaters.
+                            Developer Advocate and Front-end engineer. 
+                            I thrive on helping others get started 
+                            on/help continue their developer adventure.
+
+                            <Link href="/about">
+                                <a className="font-bold hover:text-custom-flamingo">
+                                    <h6>More about me</h6>
+                                </a>
+                            </Link>
                             <br />
                         </p>
                     </div>

@@ -7,7 +7,20 @@ const Intro = () =>{
         <div className="p-6 flex flex-col justify-center align-center">
             <h1 className="text-custom-sakura hover:text-custom-flamingo">Cat Ballar</h1>
             <h4> Developer Advocate &amp; UI Engineer </h4>
-         </div>
+          
+            <Link href="/about">
+              <a className="mt-4 font-bold hover:text-custom-flamingo">
+                <h6>About Me</h6>
+              </a>
+            </Link>
+            <a  
+                target="_blank"
+                href="https://dev.to/cat" 
+                rel="noopener noreferrer" 
+                className="mt-4 font-bold hover:text-custom-flamingo">
+              <h6>Blog</h6>
+            </a>
+        </div>
       </div>
 
     )
