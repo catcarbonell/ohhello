@@ -23,6 +23,18 @@ const Footer = () => {
                                     <h6>More about me</h6>
                                 </a>
                             </Link>
+                            <Link href="/">
+                                <a className="font-bold hover:text-custom-flamingo">View Portfolio</a>
+                            </Link>
+                            <br />
+                            <a 
+                                target="_blank"
+                                href="https://dev.to/cat" 
+                                rel="noopener noreferrer" 
+                                className="mt-4 font-bold hover:text-custom-flamingo"
+                            >
+                                Blog
+                            </a>
                             <br />
                         </p>
                     </div>
