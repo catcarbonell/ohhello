@@ -11,7 +11,9 @@ function MyApp({ Component, pageProps }) {
   return(
    
     <div className="flex flex-col place-items-center overflow-x-hidden relative">
+      <Nav />
       <main className="flex flex-col flex-grow mt-24 md:mt-64">
+
         <Component {...pageProps} />
       </main>
       <Footer />
