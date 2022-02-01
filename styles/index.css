@@ -45,7 +45,7 @@ h1 {
     color: #ccb8fc;
     font-size: 2rem;
     font-weight: 900;
-    font-family: 'Nunito', monospace;
+    font-family: 'Space Mono', monospace;
 }
 
 h2 {
@@ -80,6 +80,7 @@ a:link, a:visited {
 a:hover {
     color:#ff68f9;
 }
+
 
 
 /* ======================= */

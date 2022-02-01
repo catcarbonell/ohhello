@@ -1,5 +1,6 @@
 import {useEffect} from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { gsap } from 'gsap/dist/gsap';
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -8,6 +9,8 @@ import { faHtml5, faJsSquare, faReact, faSass, faCss3Alt } from '@fortawesome/fr
 import StackItem from '../components/layout/stackItem'
 import ScrollBtn from '../components/layout/scrollBtn'
 import Meta from '../components/meta'
+import headshot from '../public/headshot.jpg'
+
 gsap.registerPlugin(ScrollTrigger);
 
 
@@ -23,13 +26,12 @@ export default function About(){
            <Meta title="about" />
 
 
-            {/* SKILLS/EXPERIENCE  */}
+        {/* SKILLS/EXPERIENCE  */}
         <div className="w-screen flex flex-col justify-center items-center mb-20 md:mb-64">
-
             <div id="stack" className="max-w-xxl md:w-5/6 flex flex-col md:flex-row justify-center">
                 {/* STACK */}
                 <div className="about-comp w-full md:w-1/3 my-24 md:my-0">
-                    <h2 className="mb-4 uppercase text-custom-sakura">Stack</h2>
+                    <h2 className="mb-4 text-custom-sakura">Stack</h2>
                     <StackItem text="HTML" color="#ff9a84" icon={faHtml5} />
                     <StackItem text="CSS" color="#6993f5" icon={faCss3Alt} />
                     <StackItem text="JavaScript" color="#f6e995" icon={faJsSquare} />
@@ -47,7 +49,7 @@ export default function About(){
                     <div className="md:hidden">
                         <ScrollBtn target="#stack" chevron={false} />
                     </div>
-                    <h2 className="mb-2 uppercase text-custom-sakura">Experience</h2>
+                    <h2 className="mb-2 text-custom-sakura">Experience</h2>
                     <div className="mt-4">
                         <h3>
                             Miscreants
@@ -87,7 +89,7 @@ export default function About(){
                      <div className="md:hidden">
                         <ScrollBtn target="#exp" chevron={false} />
                     </div>
-                    <h2 className="mb-2 uppercase text-custom-sakura">Education</h2>
+                    <h2 className="mb-2 text-custom-sakura">Education</h2>
                     <div>
                         <h3>General Assembly</h3> 
                         <p>Software Engineering Immersive</p>

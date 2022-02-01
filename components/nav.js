@@ -54,6 +54,8 @@ const Nav = () => {
                         <Link href="/portfolio"><a onClick={toggleMenu}><NavItem text="Portfolio" /></a></Link>
                         <Link href="/about"><a onClick={toggleMenu}><NavItem text="About" /></a></Link>
                         <Link href="/contact"><a onClick={toggleMenu}><NavItem text="Contact" /></a></Link>
+                        <Link href="/testimonials"><a onClick={toggleMenu}><NavItem text="Testimonials" /></a></Link>
+
                     </div>
                 </nav> 
                 

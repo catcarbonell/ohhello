@@ -42,6 +42,7 @@ const Portfolio = () => {
            <Meta title="portfolio" />
 
             <div className="w-full pl-0 md:w-4/6 md:mx-auto mb-64 flex flex-col md:flex-wrap md:flex-row justify-start items-start">
+                <h2 className="text-center">Portfolio</h2>
                 
                 <div ref={addToRefs} className="w-full">
                     <Project 
