@@ -11,12 +11,12 @@ export default function Contact(){
     }, [])
     return(
         <>
-            <Meta title="contact" />
+            <Meta />
 
             <div className="w-1/2 pl-0 md:w-4/6 md:mx-auto mb-64 flex flex-col md:flex-wrap md:flex-row justify-start items-start">
-
                 <div className="contact-section text-xl mb-24">
                     <h2 className="mb-4 text-custom-lavender">Email me!</h2>
+                    <p>Let's collaborate!</p>
                     <EmailForm />
                 </div>
                

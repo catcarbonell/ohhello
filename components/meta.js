@@ -17,7 +17,7 @@ const  Meta = (props) => {
             <meta property="og:image" key="ogimage" content="https://catvsco.de/kitty.jpg" />
             <meta property="og:description" key="ogdescription" content="The portfolio of Cat Ballar: Developer Advocate and User Interface Engineer" />
     
-            <title>{props.title} | ui engineer &amp;&amp; dev advocate</title>
+            <title>cat ballar | ui engineer &amp;&amp; dev advocate</title>
             <link rel="icon" href="/ccfavicon.ico" />
             <link rel="webmention" href="https://webmention.io/catvsco.de/webmention" />
             <link rel="pingback" href="https://webmention.io/catvsco.de/xmlrpc" />

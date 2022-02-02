@@ -1,5 +1,7 @@
 /* purgecss start ignore */
 @tailwind base;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=Space+Mono:ital,wght@0,400;0,700;1,700&display=swap');
+
 body {
     background: url('../public/keyboardbg.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -29,9 +31,9 @@ body::before {
     background-size: cover;
   }
 
+
 @tailwind components;
 /* purgecss end ignore */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;900&family=Space+Mono:wght@400;700&display=swap');
 
 body {
     background-color: #21183c;

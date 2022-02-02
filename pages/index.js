@@ -12,12 +12,10 @@ const Home = ()=> {
  
   return (
     <>
-      <Meta title="cat" />
+      <Meta />
       <Intro />
       <Portfolio />
-      <div>
       <Testimonials />
-      </div>
     </>
   )
 }

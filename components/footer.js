@@ -14,9 +14,8 @@ const Footer = () => {
                     <div className="mb-6">
                         <h2 className="text-custom-lavender mb-2">Cat Ballar</h2>
                         <p className="md:w-3/4">
-                            Developer Advocate and Front-end engineer. 
-                            I thrive on helping others get started 
-                            on/help continue their developer adventure.
+                            
+                            ...is an interdisciplinary UI developer with a background in UX Design.
 
                             <Link href="/about">
                                 <a className="font-bold hover:text-custom-flamingo">

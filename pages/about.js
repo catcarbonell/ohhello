@@ -23,7 +23,7 @@ export default function About(){
 
     return(
         <>
-           <Meta title="about" />
+           <Meta />
 
 
         {/* SKILLS/EXPERIENCE  */}
