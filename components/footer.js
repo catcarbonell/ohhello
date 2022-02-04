@@ -16,15 +16,6 @@ const Footer = () => {
                         <p className="md:w-3/4">
                             
                             ...is an interdisciplinary UI developer with a background in UX Design.
-
-                            <Link href="/about">
-                                <a className="font-bold hover:text-custom-flamingo">
-                                    <h6>More about me</h6>
-                                </a>
-                            </Link>
-                            <Link href="/">
-                                <a className="font-bold hover:text-custom-flamingo">View Portfolio</a>
-                            </Link>
                             <br />
                             <a 
                                 target="_blank"

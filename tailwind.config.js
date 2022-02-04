@@ -23,6 +23,7 @@ module.exports = {
         blk: '#6a3499',
         skyblue: '#bdc9dd',
         lavender: '#d09aff',
+        lilac: '#875cad',
         flamingo: '#ff68f9',
         pink: '#FFADFC',
         sakura: '#ffccfd',
@@ -145,7 +146,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        'Nunito',
+        '"Nunito"',
         'system-ui',
         '-apple-system',
         'BlinkMacSystemFont',
@@ -161,7 +162,7 @@ module.exports = {
         '"Noto Color Emoji"',
       ],
       serif: ['Georgia', 'Cambria', '"Times New Roman"', 'Times', 'serif'],
-      mono: ['Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
+      mono: ['"Space Mono"', 'Menlo', 'Monaco', 'Consolas', '"Liberation Mono"', '"Courier New"', 'monospace'],
     },
     fontSize: {
       xs: '0.75rem',

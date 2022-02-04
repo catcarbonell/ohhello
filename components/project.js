@@ -20,7 +20,8 @@ export default function Project(props){
                         <h3>Role</h3>
                         {props.role}
                     </div>
-
+                </div>
+                <div className="mt-4 flex flex-row">
                     <div>
                         <h3>Stack</h3>
                         {props.stack}
@@ -29,16 +30,22 @@ export default function Project(props){
               
 
                 <div className="text-center mt-6 flex flex-row ">
-                    <div className="shadow-lg mr-2 px-4 py-2 border-2 rounded-lg uppercase hover:bg-custom-flamingo">
-                        <a href={props.github} target="new">Github</a>
-                    </div>
-                    <div className="shadow-lg mr-2 px-4 py-2 border-2 rounded-lg uppercase hover:bg-custom-flamingo">
-                        <a href={props.demo} target="new">Live Demo</a>
-                    </div>
-                    {props.case &&
-                         <div className="shadow-lg px-4 py-2 border-2 rounded-lg uppercase hover:bg-custom-flamingo">
-                            <a href={props.case} target="new">Case Study</a>
+                    <a href={props.github} target="new">
+                        <div className="shadow-lg mr-2 px-4 py-2 border-2 rounded-lg uppercase hover:text-white hover:bg-custom-flamingo">
+                            Github
                         </div>
+                    </a>
+                    <a href={props.demo} target="new">
+                        <div className="shadow-lg mr-2 px-4 py-2 border-2 bg-custom-lilac rounded-lg uppercase hover:bg-custom-flamingo">
+                            Live Demo
+                        </div>
+                    </a>
+                    {props.case &&
+                        <a href={props.case} target="new">
+                            <div className="shadow-lg px-4 py-2 border-2 rounded-lg uppercase hover:bg-custom-flamingo">
+                                Case Study
+                            </div>
+                        </a>
                     }
                    
                 </div>

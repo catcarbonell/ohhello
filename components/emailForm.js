@@ -41,7 +41,7 @@ export default function EmailForm(){
                 <div className="mb-2">
                     <input type="hidden" name="contact_number" />
                     
-                    <label for="from_name" className="uppercase text-xs">Name</label>
+                    <label htmlFor="from_name" className="uppercase text-xs">Name</label>
                     <br />
                     <input 
                         className="text-custom-flamingo rounded text-sm p-2 font-mono"  
@@ -53,7 +53,7 @@ export default function EmailForm(){
                 </div>
                 
                 <div className="mb-2">
-                    <label for="from_email" className="uppercase text-xs">Email</label>
+                    <label htmlFor="from_email" className="uppercase text-xs">Email</label>
                     <br />
                     <input 
                         placeholder="ex. chunners@capcom.com" 
@@ -66,7 +66,7 @@ export default function EmailForm(){
                 </div>
                 
                 <div className="mb-2">
-                    <label for="message_html" className="uppercase text-xs">Message</label>
+                    <label htmlFor="message_html" className="uppercase text-xs">Message</label>
                     <br />
                     <textarea 
                         className="text-custom-flamingo rounded text-sm p-2 font-mono" 
