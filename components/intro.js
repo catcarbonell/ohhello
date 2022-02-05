@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import Socials from "./layout/Socials"
 
 const Intro = () =>{
     
@@ -10,7 +10,8 @@ const Intro = () =>{
             With over 2 years of experience, she has brought together her love for design and fascination with programming
             to bring forth clean, accessible,scalable React-based front-ends to applications.
           </p>
-
+          <br />
+          <Socials /> 
 
       </div>
     )
