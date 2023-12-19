@@ -15,7 +15,6 @@ const Home = ()=> {
       <Meta />
       <Intro />
       <Portfolio />
-      <Testimonials />
     </>
   )
 }
