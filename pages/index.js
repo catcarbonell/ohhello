@@ -4,7 +4,6 @@ import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 import Meta from '../components/meta'
 import Portfolio from './portfolio'
 import Intro from '../components/intro'
-import Testimonials from './testimonials'
 
 gsap.registerPlugin(ScrollTrigger);
 
