@@ -1,4 +1,4 @@
-// import {useEffect, useRef} from 'react'
+// import {useEffect, useRef} from 'react'`
 import { gsap } from 'gsap/dist/gsap'
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 import Meta from '../components/meta'
